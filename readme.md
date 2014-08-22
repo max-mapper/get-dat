@@ -2,8 +2,8 @@
 
 ## a `dat` command line tutorial
 
-**not ready yet**
+**work in progress**
 
 first install dat on your command line: `npm install dat -g`
 
-then `cd` into each folder one at a time and follow the `readme.md` in each one
+then follow the instructions from each markdown (`.md`) file in this repo, in order.
