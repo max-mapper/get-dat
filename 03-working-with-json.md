@@ -46,8 +46,8 @@ These aren't newline-delimited because they use line breaks to format the JSON b
 First create a new text file called `people.json` and copy-paste the following newline-delimited JSON data into it:
 
 ```
-{"name": "alice", age: "35"}
-{"name":"bob", age: "34"}
+{"name": "alice", "age": "35"}
+{"name":"bob", "age": "34"}
 ```
 
 Make sure you are still in the same freshly initialized dat repository folder from the previous lessons.
