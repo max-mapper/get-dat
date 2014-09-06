@@ -54,7 +54,11 @@ Make sure you are still in the same freshly initialized dat repository folder fr
 
 ## Import the JSON into dat
 
-Import the data into dat by running `dat import people.json --json`
+Import the data into dat:
+
+```
+dat import people.json --json
+```
 
 Now you should be able to get the data back out of dat by running `dat cat`. This command is named after the UNIX command called `cat` which prints out the contents of files.
 
@@ -70,7 +74,11 @@ The `key` and `version` fields were added by dat. Every row of data in dat needs
 
 Picking a `key` is an important thing to consider doing. Data in dat can only efficiently be accessed by `key`. Keys also must be unique, meaning there can only be one row per key for the whole dat database (but there *can* be multiple versions of a row).
 
-Run the import command again: `dat import people.json --json`
+Run the import command again:
+
+```
+dat import people.json --json
+```
 
 Now when you do `dat cat` you should see duplicates!
 
@@ -90,7 +98,11 @@ For some use cases importing data without a key is perfectly fine behavior, but 
 
 OK, let's start over. run `rm -rf .dat` to get rid of the data we imported above, and then run `dat init` to initialize a new empty dat store.
 
-Now import the data again, but this time let's specify a `primary` key: `dat import people.json --json --primary=name`
+Now import the data again, but this time let's specify a `primary` key:
+
+```
+dat import people.json --json --primary=name
+```
 
 If you do `dat cat` again, you should see that the data is using the name as the key:
 
@@ -100,6 +112,10 @@ $ dat cat
 {"name":"bob","key":"bob","version":1}
 ```
 
-If you run the import a second time: `dat import people.json --json --primary=name`
+If you run the import a second time:
+
+```
+dat import people.json --json --primary=name
+```
 
 A `dat cat` should show no new data, and both rows should still be at version 1.
