@@ -16,7 +16,7 @@ Dat will store the actual contents of blobs in it's blob store, but it will trac
 
 For this reason, to write a blob into dat you have to 'attach' it to a row. If the row you specify doesn't exist it will be created. Updating rows follows the same semantics as doing a `put`, e.g. you must supply the latest version for the update to work.
 
-Attach the `cat.png` onto a row called 'cat-pictures':
+Attach the `cat.png` onto a row called `cat-pictures`:
 
 ```
 dat blobs put cat-pictures cat.png

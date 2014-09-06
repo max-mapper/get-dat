@@ -1,9 +1,9 @@
 # get-dat
 
-## a `dat` command line tutorial
+## A command line tutorial to learn `dat`
 
-**work in progress**
+First install dat on your command line: `npm install dat -g`
 
-first install dat on your command line: `npm install dat -g`
+Then follow the instructions from each markdown (`.md`) file in this repo, in order.
 
-then follow the instructions from each markdown (`.md`) file in this repo, in order.
+More lessons coming soon! Leave feedback in the issue tracker.
