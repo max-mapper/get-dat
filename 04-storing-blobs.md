@@ -2,7 +2,7 @@
 
 ## What are blobs
 
-The word blob is short for "binary large object. In addition to it's tabular data APIs, dat has separate APIs for working with blobs. 
+The word blob is short for "binary large object". In addition to it's tabular data APIs, dat has separate APIs for working with blobs. 
 
 The [data importing guide](https://github.com/maxogden/dat/blob/master/docs/importing.md) has more detailed information about the differences between the two types of storage, but for now just think of the blob store as a way to store files, like what you might put in Dropbox or attach to an email. The tabular store is for any data made up of rows and columns. The key difference between the two stores is that every row of data in the tabular store gets versioned, but blobs are more coarsely versioned, meaning dat simply stores multiple versions of the blobs.
 
