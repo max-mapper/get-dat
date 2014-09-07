@@ -10,7 +10,7 @@ Newline-delimited JSON is just JSON data formatted like this:
 
 ```
 {"name": "alice"}
-{"name":"bob"}
+{"name": "bob"}
 ```
 
 As you can see, it just means JSON objects separated by a line break. Some other common ways of formatting JSON that *aren't* newline delimited:
@@ -66,8 +66,8 @@ The output of `dat cat` should be something like this:
 
 ```
 $ dat cat
-{"name":"alice","key":"chz650a020000oxa5zpzmd9aj","version":1}
-{"name":"bob","key":"chz650a040001oxa5bpa1ae5s","version":1}
+{"name":"alice","age":"35","key":"chz650a020000oxa5zpzmd9aj","version":1}
+{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s","version":1}
 ```
 
 The `key` and `version` fields were added by dat. Every row of data in dat needs to have both of these. If they aren't in the incoming data then dat will generate them automatically. 
@@ -84,10 +84,10 @@ Now when you do `dat cat` you should see duplicates!
 
 ```
 $ dat cat
-{"name":"alice","key":"chz650a020000oxa5zpzmd9aj","version":1}
-{"name":"bob","key":"chz650a040001oxa5bpa1ae5s","version":1}
-{"name":"alice","key":"chz65ge3z0000qiq4n711iaka","version":1}
-{"name":"bob","key":"chz65ge420001qiq4q15as2ga","version":1}
+{"name":"alice","age":"35""key":"chz650a020000oxa5zpzmd9aj","version":1}
+{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s","version":1}
+{"name":"alice","age":"35","key":"chz65ge3z0000qiq4n711iaka","version":1}
+{"name":"bob","age":"34","key":"chz65ge420001qiq4q15as2ga","version":1}
 ```
 
 This is because our data doesn't have a `key` in it, so dat just assumes the data is new data.
@@ -108,8 +108,8 @@ If you do `dat cat` again, you should see that the data is using the name as the
 
 ```
 $ dat cat
-{"name":"alice","key":"alice","version":1}
-{"name":"bob","key":"bob","version":1}
+{"name":"alice","age":"35","key":"alice","version":1}
+{"name":"bob","age":"34","key":"bob","version":1}
 ```
 
 If you run the import a second time:

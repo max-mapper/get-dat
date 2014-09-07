@@ -12,6 +12,8 @@ You could import a CSV file as rows into the tabular store, or upload the entire
 
 We have conveniently provided a cat photo for you to use in this tutorial. It is called `cat.png` and should be in the `get-dat` directory.
 
+Running `ls` should list `cat.png`. If you don't see `cat.png` then make sure you have navigated into the `get-dat` directory in your terminal.
+
 Dat will store the actual contents of blobs in it's blob store, but it will track metadata about the blob (e.g. filename, size, etc) by storing the metadata in a row in the tabular store.
 
 For this reason, to write a blob into dat you have to 'attach' it to a row. If the row you specify doesn't exist it will be created. Updating rows follows the same semantics as doing a `put`, e.g. you must supply the latest version for the update to work.
@@ -22,7 +24,7 @@ Attach the `cat.png` onto a row called `cat-pictures`:
 dat blobs put cat-pictures cat.png
 ```
 
-Since there was no existing row called `cat-pictures`, it should have been created.
+Since there was no existing row called `cat-pictures`, it was created for you.
 
 Now start up the dat server with `dat listen` and then open `http://localhost:6461/` in your web browser to open the dat editor app.
 
