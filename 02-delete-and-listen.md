@@ -10,9 +10,9 @@ In this lesson you will learn the ins-and-outs of deleting a dat repository and 
 
 2. You should now have a `dat.json` but no `.dat` folder. 
 
-3. Try to start the dat http server by running `dat listen`. You should get an error `Error: You are not in a dat folder.` So even though we have a `dat.json` file that doesn't make it a valid dat repository. 
+3. Try to start the dat http server by running `dat listen`. You should get an error `Error: There is no dat here` So even though we have a `dat.json` file that doesn't make it a valid dat repository. 
 
-4. Do `dat init` again. This time it should skip the prompts and use the existing `dat.json` file.
+4. Do `dat init` again. It will go through the prompt again, but with the existing values as defaults.
 
 5. Now try to start the dat server again by running `dat listen`. This time it should succeed!
 
