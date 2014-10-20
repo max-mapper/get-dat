@@ -4,7 +4,8 @@
   "description": "workshop content for learning dat",
   "main": "index.js",
   "scripts": {
-    "build": "submarine workshop dist --header='Get Dat' --footer='Nice footer.'"
+    "build": "submarine workshop dist --header='Get Dat' --footer='Nice footer.'",
+    "deploy": "gh-pages-deploy"
   },
   "author": "max ogden",
   "license": "BSD",
