@@ -1,11 +1,22 @@
 {
   "name": "get-dat",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "workshop content for learning dat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "submarine workshop dist --header='Get Dat' --footer='Nice footer.'"
   },
-  "author": "",
-  "license": "BSD"
+  "author": "max ogden",
+  "license": "BSD",
+  "gh-pages-deploy": {
+    "prep": [
+      "build"
+    ],
+    "staticpath": "dist",
+    "noprompt": "true"
+  },
+  "dependencies": {
+    "gh-pages-deploy": "^0.1.1",
+    "submarine": "0.0.10"
+  }
 }

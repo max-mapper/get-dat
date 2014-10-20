@@ -50,3 +50,5 @@ To read the blob data, open `http://localhost:6461/api/rows/cat-pictures/cat.png
 Dat uses the `key` property of the blob metadata to retrieve the contents of the blob when they are accessed. When using the default blob store dat will store data in the `.dat/objects` folder. The key is the [SHA-256](http://en.wikipedia.org/wiki/SHA-2) hash of the contents of the blob. If you open up the `.dat` folder you can see the file.
 
 ![dat-directory](dat-directory.png)
+
+When you replicate data using dat both the tabular data and the blobs get tranferred.
