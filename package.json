@@ -4,20 +4,29 @@
   "description": "workshop content for learning dat",
   "main": "index.js",
   "scripts": {
-    "build": "submarine workshop dist --header='Get Dat' --footer='Nice footer.'",
-    "deploy": "gh-pages-deploy"
+    "render": "submarine markdown guide --header='Get Dat' --footer='Nice footer.'",
+    "deploy": "gh-pages-deploy",
+    "build": "browserify index.js -o bundle.js && browserify terminal.js -o terminal-bundle.js",
+    "start": "beefy index.js:bundle.js terminal.js:terminal-bundle.js"
   },
   "author": "max ogden",
   "license": "BSD",
+  "watch": {
+    "build": "workshop/*.md"
+  },
   "gh-pages-deploy": {
     "prep": [
-      "build"
+      "build",
+      "render"
     ],
-    "staticpath": "dist",
+    "staticpath": "./",
     "noprompt": "true"
   },
   "dependencies": {
     "gh-pages-deploy": "^0.1.1",
     "submarine": "0.0.10"
+  },
+  "devDependencies": {
+    "npm-watch": "0.0.0"
   }
 }

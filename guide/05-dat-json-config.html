@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>Get Dat</title>
+  <style>
+    body {
+      font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+      font-weight: 300;
+      color: #333;
+      line-height: 1.65em;
+      font-size: 15px;
+    }
+
+    .site-header {
+      margin: 20px 0;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .site-header-text {
+      font-size: 50px;
+      letter-spacing: 2px;
+      color: #333;
+      line-height: 1em;
+      font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    }
+
+    .site-footer {
+      font-size: 12px;
+      color: #999;
+      margin-top: 20px;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .wrapper {
+      width: 100%;
+      margin: auto;
+      max-width: 640px;
+    }
+
+    .navlink {
+      display: inline-block;
+      width: 49%;
+    }
+
+    .nextp { text-align: right; }
+
+    code, pre {
+      background: #f5f5f5;
+      border-radius: 2px;
+      font-size: 14px;
+      padding: 3px;
+    }
+
+    pre code { padding: 0;}
+
+    a {
+      color: #08c;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <a class="site-header-text" href="./index.html">Get Dat</a>
+    </header>
+
+    <section class="content">
+
+      <h1 id="-dat-json-"><code>dat.json</code></h1>
+<h2 id="how-to-configure-dat">How to configure dat</h2>
+<p>The <code>dat.json</code> file that gets created when you do <code>dat init</code> can be used to override dat&#39;s default behavior and extend it with new functionality.</p>
+<p>There is <a href="https://github.com/maxogden/dat/blob/master/docs/dat-json-config.md">full documentation available</a> for the <code>dat.json</code> file. In this file we will cover some common use cases.</p>
+<h3 id="default-port">Default port</h3>
+<p>Dat&#39;s default port is <code>6461</code>. Edit your <code>dat.json</code> file (create a new empty dat if you don&#39;t already have one) and add a port:</p>
+<pre><code class="lang-JSON">{
+  &quot;name&quot;: &quot;get-dat&quot;,
+  &quot;port&quot;: 9000
+}
+</code></pre>
+<p>Now run <code>dat listen</code>. It should have started on port <code>9000</code> this time. Enter <code>CTRL + c</code> to stop the dat process.</p>
+<h3 id="transformations">Transformations</h3>
+<p>You can insert custom functions that will happen whenever dat reads a row or writes a row to the tabular store. These can be commands that do </p>
+<h3 id="blobs">Blobs</h3>
+<h3 id="leveldown">Leveldown</h3>
+<h3 id="listen-hook">Listen Hook</h3>
+
+        <a class="lastp navlink" href="04-storing-blobs.html">Previous: 04-storing-blobs</a>
+    </section>
+
+    <footer class="site-footer">
+      Nice footer.    </footer>
+  </div>
+</body>
+</html>
