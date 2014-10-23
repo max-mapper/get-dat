@@ -19,7 +19,6 @@
       "build",
       "render"
     ],
-    "staticpath": ".",
     "noprompt": "true"
   },
   "dependencies": {
