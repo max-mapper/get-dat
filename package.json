@@ -19,7 +19,7 @@
       "build",
       "render"
     ],
-    "staticpath": "./",
+    "staticpath": ".",
     "noprompt": "true"
   },
   "dependencies": {
