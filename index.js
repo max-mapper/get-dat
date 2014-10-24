@@ -8,7 +8,7 @@ var qs = url.parse(window.location.href, true).query
 var opts = {
   guide: 'guide/',
   console: 'terminal.html',
-  server: production ? 'try-dat.com' : 'dev.try-dat.com:8080',
+  server: qs.server || (production ? 'try-dat.com' : 'dev.try-dat.com:8080'),
   id: qs.id || Math.random().toString(36).slice(2)
 }
 
