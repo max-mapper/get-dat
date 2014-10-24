@@ -26,6 +26,8 @@
     "submarine": "0.0.10"
   },
   "devDependencies": {
+    "beefy": "^2.1.1",
+    "browserify": "^6.1.0",
     "npm-watch": "0.0.0"
   }
 }
