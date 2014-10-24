@@ -22,6 +22,7 @@
     "noprompt": "true"
   },
   "dependencies": {
+    "adventure-time": "^1.0.0",
     "gh-pages-deploy": "^0.1.1",
     "submarine": "0.0.10"
   },
