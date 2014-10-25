@@ -2,7 +2,7 @@
 
 Let's put some data into dat.
 
-There are three formats that dat can import: Newline-delimited JSON, CSV and Protocol Buffers. This file will cover JSON.
+There are three formats that dat can import: [Newline-delimited JSON](http://ndjson.org/), CSV and [Protocol Buffers](https://developers.google.com/protocol-buffers/). In this tutorial we will only work with JSON to keep things simple.
 
 ## What is newline-delimited JSON
 
@@ -43,14 +43,16 @@ These aren't newline-delimited because they use line breaks to format the JSON b
 
 ## Save some JSON to a file
 
-First create a new text file called `people.json` and copy-paste the following newline-delimited JSON data into it:
+First create a new text file called `people.json`. The easiest way is to type `touch people.json` into the terminal. This will create a new empty file. `people.json` should now show up in the file browser below, and you can double click it to edit it.
+
+Copy-paste the following newline-delimited JSON data into `people.json`:
 
 ```
 {"name": "alice", "age": "35"}
 {"name":"bob", "age": "34"}
 ```
 
-Make sure you are still in the same freshly initialized dat repository folder from the previous lessons.
+Make sure you are still in the same freshly initialized dat repository folder from the previous lessons (e.g. check that you can still see the `.dat` folder).
 
 ## Import the JSON into dat
 
@@ -96,7 +98,7 @@ For some use cases importing data without a key is perfectly fine behavior, but 
 
 ## Importing JSON with keys
 
-OK, let's start over. run `rm -rf .dat` to get rid of the data we imported above, and then run `dat init` to initialize a new empty dat store.
+OK, let's start over. run `dat clean` to get rid of the data we imported above, and then run `dat init` to initialize a new empty dat store.
 
 Now import the data again, but this time let's specify a `primary` key:
 
