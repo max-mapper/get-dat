@@ -52,6 +52,8 @@ Copy-paste the following newline-delimited JSON data into `people.json`:
 {"name":"bob", "age": "34"}
 ```
 
+Run `cat people.json` to verify that the data has been written to the file successfully.
+
 Make sure you are still in the same freshly initialized dat repository folder from the previous lessons (e.g. check that you can still see the `.dat` folder).
 
 ## Import the JSON into dat

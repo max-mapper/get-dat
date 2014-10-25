@@ -16,7 +16,7 @@ In this lesson you will learn the ins-and-outs of deleting a dat repository and 
 
 5. Now try to start the dat server again by running `dat listen`. This time it should succeed!
 
-6. Try viewing your dat server in a new browser tab. You can get the address of your server from `welcome.txt`.
+6. Try viewing your dat server in a new browser tab. You can get the address of your server from `welcome.txt`. Remember to open it in a new tab!
 
 6. To stop the dat server enter `CTRL + c` (hold down `CTRL` and then `c` simultaneously). This is a terminal command that stops the current program.
 
