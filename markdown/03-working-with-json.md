@@ -2,7 +2,7 @@
 
 Let's put some data into dat.
 
-There are three formats that dat can import: [Newline-delimited JSON](http://ndjson.org/), CSV and [Protocol Buffers](https://developers.google.com/protocol-buffers/). In this tutorial we will only work with JSON to keep things simple.
+There are three formats that dat can import: <a href="http://ndjson.org/" target="_blank">Newline-delimited JSON</a>, CSV and <a href="https://developers.google.com/protocol-buffers/" target="_blank">Protocol Buffers</a>. In this tutorial we will only work with JSON to keep things simple.
 
 ## What is newline-delimited JSON
 

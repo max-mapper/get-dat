@@ -1,4 +1,4 @@
-**get-dat** is a tutorial that teaches you how to work with datasets using [dat](http://dat-data.com/). 
+**get-dat** is a tutorial that teaches you how to work with datasets using <a href="http://dat-data.com" target="_blank">dat</a>.
 
 To the left there is a terminal that is connected to a private server that has the `dat` CLI tool installed. 
 
