@@ -3,3 +3,5 @@ dat.json
 people.json
 .DS_Store
 node_modules
+bundle.js
+terminal-bundle.js
