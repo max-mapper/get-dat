@@ -7,7 +7,7 @@ var qs = url.parse(window.location.href, true).query
 
 if (!qs.id) {
   qs.id = Math.random().toString(36).slice(2)
-  window.location.href += '?' + querystring.stringify(qs)
+  window.location.href = window.location.href.split('?')[0] + '?' + querystring.stringify(qs)
 }
 
 var opts = {
