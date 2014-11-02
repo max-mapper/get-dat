@@ -70,13 +70,16 @@ to the dat editor)
 
 ## Adding blobs via the dat editor
 
-You can also add new files via the dat editor. While back on the detail
-page for bob, now try to upload a new file to the bob row (just use any
-file you have on your computer).
+You can also add new files via the dat editor. Open the detailed view
+for the bob row again and try to upload a new file to the bob row (just
+use any file you have on your computer).
 
 After uploading the new file to the bob row, just close the tab with the
-dat editor and return to here. In the terminal, once again type `dat cat`
-so we can see what acually happened (the example below have added line
+dat editor and return to here.
+
+Let's check what just happened from within the terminal. First stop the
+dat server by pressing `CTRL + c` inside the terminal. Now type `dat
+cat` to list the content of dat (the example below have added line
 breaks and indentation for clearity):
 
 ```
