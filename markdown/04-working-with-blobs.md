@@ -24,8 +24,11 @@ What a good looking gentleman. Now let's attach it to the row we created
 in the previous exercise, containing bob's data:
 
 ```
-dat blobs put bob /pictures/bob.png
+dat blobs put bob /pictures/bob.png --version=1
 ```
+
+*Note: `--version` should be set to the current version of the row you
+want to update*
 
 Thats it! Now let's try a see what happended to our row. Type `dat cat`
 to see the content of dat (the example below have added line breaks and
