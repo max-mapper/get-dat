@@ -64,7 +64,7 @@ browser tab
 the document icon to the left of the row containing bob
 
 1. This will bring up a detailed view of the bob record with all
-attachments. Try clicking of the big bob.png picture at the top to see
+attachments. Try clicking on the big bob.png picture at the top to see
 the actual attachment (click the back button in your browser to go back
 to the dat editor)
 
