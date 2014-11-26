@@ -2,7 +2,7 @@
 
 You can use dat to distribute datasets to others. All you have to do is run `dat listen` on a web server and others can do `dat clone http://your-server-address` to download a full copy of the dataset.
 
-For example, we host a dat dataset with some genome data in it at <a href="http://eukaryota.dathub.org" target="_blank">http://eukaryota.dathub.org</a>.
+For example, we host a dat dataset with some genome data in it at <a href="http://eukaryota.dathub.org" target="_blank">eukaryota.dathub.org</a>.
 
 You can click on the above link to browse the dataset from your web browser, but you can also make a clone of your dataset into your terminal by running this command:
 
