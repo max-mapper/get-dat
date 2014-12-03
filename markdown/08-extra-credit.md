@@ -80,7 +80,7 @@ DEBUG=* gasket run index-and-align
 
 When this finishes, it should have created even more files in the folders from the previous step.
 
-The final pipeline, `convert-to-bam`, converts the otuput of the alignment into a different file format. This pipeline should be pretty fast.
+The final pipeline, `convert-to-bam`, converts the output of the alignment into a different file format. This pipeline should be pretty fast.
 
 ```
 DEBUG=* gasket run convert-to-bam
