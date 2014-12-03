@@ -30,9 +30,9 @@ dat blobs put bob /pictures/bob.png --version=1
 *Note: `--version` should be set to the current version of the row you
 want to update*
 
-Thats it! Now let's try a see what happended to our row. Type `dat cat`
-to see the content of dat (the example below have added line breaks and
-indentation for clearity):
+Thats it! Now let's see what happened to our row. Type `dat cat`
+to see the content of dat (the example below has added line breaks and
+indentation for clarity):
 
 ```
 $ dat cat
@@ -45,12 +45,14 @@ $ dat cat
 }}
 ```
 
-To be performant, dat technically doesn't store the blobs together with
-the rows inside dat. Instead blobs are stored in a blob-store and
-referenced using a unique blob key. You'll see that dat have added an
-extra column to the row named `blobs`. This column just holds a
-reference to the actual blob. Also notice how the version column got
-incremented to indicate that the row changed.
+To be performant, dat doesn't store blobs inside the rows. 
+Instead they're kept in a blob-store and referenced using a unique blob key.
+
+You'll see that dat has added an extra column to the row, named `blobs`, that 
+records the blob key as a reference to the actual blob. 
+
+Also, notice the value of `version` has been incremented, indicating that 
+the row changed.
 
 ## Viewing blobs in the dat editor
 
@@ -71,16 +73,15 @@ to the dat editor)
 ## Adding blobs via the dat editor
 
 You can also add new files via the dat editor. Open the detailed view
-for the bob row again and try to upload a new file to the bob row (just
-use any file you have on your computer).
+for the bob row again and try to upload a new file (use any file you 
+have on your computer).
 
-After uploading the new file to the bob row, just close the tab with the
-dat editor and return to here.
+After uploading the file to the bob row, close the tab for the dat editor
+and return to this tab.
 
-Let's check what just happened from within the terminal. First stop the
-dat server by pressing `CTRL + c` inside the terminal. Now type `dat
-cat` to list the content of dat (the example below have added line
-breaks and indentation for clearity):
+Let's check what just happened. First stop the dat server by pressing 
+`CTRL + c` inside the terminal. Now type `dat cat` to list the content
+of dat (the example below has added line breaks and indentation for clarity):
 
 ```
 $ dat cat
