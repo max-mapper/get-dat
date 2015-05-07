@@ -33,7 +33,7 @@ dat clone ssh/http/dat://path/to/dat/here/<dataset-name>#ab34d32
 - Clone and later checkout
 ```
 dat clone ssh/http/dat://path/to/dat/here/<dataset-name>#ab34d32
-dat checkout #bb3413
+dat checkout b2b3413
 ```
 - Push a dataset
 ```
