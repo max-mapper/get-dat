@@ -45,10 +45,13 @@ dat push ssh/http/dat://path/to/another/dat/here
 dat pull
 dat pull ssh/http/dat://path/to/dat/here
 ```
+
 - Diff two versions of a dataset
 ```
-dat diff <version1> <version2>
+dat pull ssh://path/to/dat/here/<dataset-name>
+dat diff
 ```
+
 - Merge two versions of a dataset to create one version
 ```
 dat merge <version1> <version2>
