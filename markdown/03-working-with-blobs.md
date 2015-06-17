@@ -1,8 +1,8 @@
-# Write some blobs (or files)
+# Write some non-tabular data (blobs)
 
 So far we've only worked with simple text-based data in the form of JSON
-objects, stored as rows inside dat. But what if you have a large file
-that you want to associate with a row in dat?
+objects, stored as rows inside dat. But what if you have a large non-tabular file
+that you want store in dat?
 
 To accomondate this, dat is capable of adding attachments to datasets.
 These attachments are called blobs, which is short for "binary large

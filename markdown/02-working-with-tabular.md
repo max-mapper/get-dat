@@ -1,4 +1,4 @@
-# Write some JSON
+# Write some tabular data
 
 Let's put some data into dat.
 
