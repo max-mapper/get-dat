@@ -1,6 +1,8 @@
 # dat clone
 
-You can use dat to distribute datasets to others. All you have to do is run `dat listen` on a web server and others can do `dat clone http://your-server-address` to download a full copy of the dataset.
+You can use dat to distribute datasets to others. Dat is transport agnostic, so it is well suited for typical transport protocols such as http or ssh -- which means any current authentication setup is supported.
+
+For example, once you create your dat with `dat init`, others can do `dat clone ssh://your-server-address/path/to/dat` to download a full copy of the dat, including all rows, blobs/files, and version history.
 
 For example, we host a dat dataset with some genome data in it at <a href="http://eukaryota.dathub.org" target="_blank">eukaryota.dathub.org</a>.
 
@@ -14,10 +16,10 @@ This should clone the dataset into a folder called `eukaryota`. You can change t
 
 In the terminal, run `cd eukaryota` to enter into the newly cloned dat.
 
-Try running `dat cat --limit=1` to print out the first row from the dataset. You should see something like this:
+Try running `dat export --limit=1` to print out the first row from the dataset. You should see something like this:
 
 ```JSON
-{"uid":"10","organism_name":"Oryza sativa","organism_kingdom":"Eukaryota","organism_group":"","organism_subgroup":"Land Plants","defline":"Oryza sativa overview","projectid":9512,"project_accession":"PRJNA9512","status":"Complete","number_of_chromosomes":"12","number_of_plasmids":"1","number_of_organelles":"2","assembly_name":"Build 4.0","assembly_accession":"GCA_000005425.2","assemblyid":313038,"create_date":"2002/04/04 00:00","options":"","weight":385,"chromosome_assemblies":"5","scaffold_assemblies":"1","sra_genomes":"0","taxid":4530,"key":"10","version":1}
+{"uid":"10","organism_name":"Oryza sativa","organism_kingdom":"Eukaryota","organism_group":"","organism_subgroup":"Land Plants","defline":"Oryza sativa overview","projectid":9512,"project_accession":"PRJNA9512","status":"Complete","number_of_chromosomes":"12","number_of_plasmids":"1","number_of_organelles":"2","assembly_name":"Build 4.0","assembly_accession":"GCA_000005425.2","assemblyid":313038,"create_date":"2002/04/04 00:00","options":"","weight":385,"chromosome_assemblies":"5","scaffold_assemblies":"1","sra_genomes":"0","taxid":4530,"key":"10"}
 ```
 
 ## Cloning a clone
