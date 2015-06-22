@@ -58,40 +58,40 @@ Make sure you are still in the same freshly initialized dat repository folder fr
 
 ## Import the JSON into dat
 
-Import the data into dat:
+Import the data into dat, under a dataset called 'people':
 
 ```
-dat import people.json --json
+dat import people.json --json -d people
 ```
 
-Now you should be able to get the data back out of dat by running `dat cat`. This command is named after the UNIX command called `cat` which prints out the contents of files.
+Now you should be able to get the data back out of dat by running `dat export -d people`. 
 
-The output of `dat cat` should be something like this:
+The output of `dat export -d people` should be something like this:
 
 ```
 $ dat cat
-{"name":"alice","age":"35","key":"chz650a020000oxa5zpzmd9aj","version":1}
-{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s","version":1}
+{"name":"alice","age":"35","key":"chz650a020000oxa5zpzmd9aj"}
+{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s"}
 ```
 
-The `key` and `version` fields were added by dat. Every row of data in dat needs to have both of these. If they aren't in the incoming data then dat will generate them automatically. 
+The `key` was added by dat. Every row of data in dat needs to a key. If it isnt in the incoming data then dat will generate it automatically. 
 
-Picking a `key` is an important thing to consider doing. Data in dat can only efficiently be accessed by `key`. Keys also must be unique, meaning there can only be one row per key for the whole dat database (but there *can* be multiple versions of a row).
+Picking a `key` is an important thing to consider doing. Data in dat can only efficiently be accessed by `key`. Keys also must be unique, meaning there can only be one row per key for the whole dat database.
 
 Run the import command again:
 
 ```
-dat import people.json --json
+dat import people.json -d people
 ```
 
 Now when you do `dat cat` you should see duplicates!
 
 ```
 $ dat cat
-{"name":"alice","age":"35""key":"chz650a020000oxa5zpzmd9aj","version":1}
-{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s","version":1}
-{"name":"alice","age":"35","key":"chz65ge3z0000qiq4n711iaka","version":1}
-{"name":"bob","age":"34","key":"chz65ge420001qiq4q15as2ga","version":1}
+{"name":"alice","age":"35""key":"chz650a020000oxa5zpzmd9aj"}
+{"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s"}
+{"name":"alice","age":"35","key":"chz65ge3z0000qiq4n711iaka"}
+{"name":"bob","age":"34","key":"chz65ge420001qiq4q15as2ga"}
 ```
 
 This is because our data doesn't have a `key` in it, so dat just assumes the data is new data.
@@ -100,26 +100,26 @@ For some use cases importing data without a key is perfectly fine behavior, but 
 
 ## Importing JSON with keys
 
-OK, let's start over. run `dat clean` to get rid of the data we imported above, and then run `dat init` to initialize a new empty dat store.
+OK, let's start over. run `dat destroy` to get rid of the data we imported above, and then run `dat init` to initialize a new empty dat store.
 
-Now import the data again, but this time let's specify a `primary` key:
+Now import the data again, but this time let's specify a key:
 
 ```
-dat import people.json --json --primary=name
+dat import people.json --key=name -d people
 ```
 
 If you do `dat cat` again, you should see that the data is using the name as the key:
 
 ```
 $ dat cat
-{"name":"alice","age":"35","key":"alice","version":1}
-{"name":"bob","age":"34","key":"bob","version":1}
+{"name":"alice","age":"35","key":"alice"}
+{"name":"bob","age":"34","key":"bob"}
 ```
 
 If you run the import a second time:
 
 ```
-dat import people.json --json --primary=name
+dat import people.json --key=name -d people
 ```
 
-A `dat cat` should show no new data, and both rows should still be at version 1.
+A `dat export -d people` should show no duplicates this time.

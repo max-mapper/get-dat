@@ -1,18 +1,16 @@
-# Write some blobs
+# Write some files
 
 So far we've only worked with simple text-based data in the form of JSON
 objects, stored as rows inside dat. But what if you have a large file
 that you want to associate with a row in dat?
 
-To accomondate this, dat is capable of adding attachments to rows.
-These attachments are called blobs, which is short for "binary large
-object". A blob can be any form of binary data, but for now just think
-of a blob as a file, like one you might put in Dropbox or attach to an
-email.
+To accommodate this, dat is capable of working with large files.
+A file can be any form of binary data, such as what you might 
+put in Dropbox or attach to an email.
 
-## Adding blobs to dat
+## Adding files to dat
 
-Let's try and attach a blob to a row in dat. For convenience we've
+Let's put a file into dat. For convenience we've
 prepared a picture of Bob for you and put it on your server under
 `/pictures`. Let see it first:
 
