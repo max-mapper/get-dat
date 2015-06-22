@@ -108,10 +108,10 @@ Now import the data again, but this time let's specify a key:
 dat import people.json --key=name -d people
 ```
 
-If you do `dat cat` again, you should see that the data is using the name as the key:
+If you do `dat export -d people` again, you should see that the data is using the name as the key:
 
 ```
-$ dat cat
+$ dat export -d people
 {"name":"alice","age":"35","key":"alice"}
 {"name":"bob","age":"34","key":"bob"}
 ```
