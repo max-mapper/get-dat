@@ -41,9 +41,14 @@ When the install command finishes you should be able to run the `dat` command in
 
 ```
 $ dat
-Usage: dat <command> [<args>]
+usage: dat <command(s)> [-flag] [--key=value]
 
-Enter 'dat help' for help
+commands:
+  init      initialize a new dat in a directory
+  checkout  dat will operate at a particular fork
+  add       import a file into dat
+  push      push data to a remote dat
+  ... etc
 ```
 
 Now try cloning your copy of the eukaryota data. Run this command on your laptop (using your own server address from `welcome.txt`)
