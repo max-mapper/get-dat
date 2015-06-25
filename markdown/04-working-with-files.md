@@ -20,6 +20,8 @@ prepared a picture of Bob for you and put it on your server under
 picture-tube /pictures/bob.png
 ```
 
+(if you don't have picture-tube you can `npm install -g picture-tube` and use any png on your computer)
+
 What a good looking gentleman. Now let's attach it to the dataset we created
 in the previous exercise, containing bob's data:
 

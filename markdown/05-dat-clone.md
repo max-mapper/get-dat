@@ -9,14 +9,14 @@ For example, we host a dat dataset with some genome data in it at <a href="http:
 You can click on the above link to browse the dataset from your web browser, but you can also make a clone of your dataset into your terminal by running this command:
 
 ```
-dat clone http://eukaryota.dathub.org eukaryota
+dat clone http://publicbits.org:6442 eukaryota
 ```
 
 This should clone the dataset into a folder called `eukaryota`. You can change the folder name by changing the last argument of the `clone` command above. If you don't specify a folder name it will just use the server name as the folder name (e.g. `eukaryota.dathub.org`).
 
 In the terminal, run `cd eukaryota` to enter into the newly cloned dat.
 
-Try running `dat export --limit=1` to print out the first row from the dataset. You should see something like this:
+Try running `dat export -d organisms --limit=1` to print out the first row from the dataset. You should see something like this:
 
 ```JSON
 {"uid":"10","organism_name":"Oryza sativa","organism_kingdom":"Eukaryota","organism_group":"","organism_subgroup":"Land Plants","defline":"Oryza sativa overview","projectid":9512,"project_accession":"PRJNA9512","status":"Complete","number_of_chromosomes":"12","number_of_plasmids":"1","number_of_organelles":"2","assembly_name":"Build 4.0","assembly_accession":"GCA_000005425.2","assemblyid":313038,"create_date":"2002/04/04 00:00","options":"","weight":385,"chromosome_assemblies":"5","scaffold_assemblies":"1","sra_genomes":"0","taxid":4530,"key":"10"}
@@ -24,38 +24,15 @@ Try running `dat export --limit=1` to print out the first row from the dataset. 
 
 ## Cloning a clone
 
-So you've cloned a dataset and re-hosted it. You don't own the original dataset (`eukaryota.dathub.org`) but you *do* own your clone. This means you can edit your copy and re-distribute your edited versions for others to clone.
-
-Dat is still very much in the early stages of development, but we hope to enable some really cool collaboration workflows to make sharing and improving datasets easy.
-
-Now, for this next step you'll need to install dat on your local machine so that you can clone your dataset onto your personal computer.
-
-Installing dat takes 2 steps:
-
-- First, <a href="http://nodejs.org" target="_blank">download the node.js installer for your OS</a> and walk through the installer program. This will install the `node` and `npm` commands onto your computer.
-- Second, open your terminal program (`Terminal.app` on Mac, `CMD.exe` on Windows) and install dat by running `npm install dat -g`. This make take a few minutes.
-
-If you get an `EACCESS` error you can try running the install command again with more permissions: `sudo npm install dat -g`
-
-When the install command finishes you should be able to run the `dat` command in your terminal and see output like:
-
-```
-$ dat
-usage: dat <command(s)> [-flag] [--key=value]
-
-commands:
-  init      initialize a new dat in a directory
-  checkout  dat will operate at a particular fork
-  add       import a file into dat
-  push      push data to a remote dat
-  ... etc
-```
+So you've cloned a dataset and re-hosted it. You don't own the original dataset (`publicbits.org:6442`) but you *do* own your clone. This means you can edit your copy and re-distribute your edited versions for others to clone.
 
 Now try cloning your copy of the eukaryota data. Run this command on your laptop (using your own server address from `welcome.txt`)
 
 ```
-dat clone http://MY-SERVER-ADDRESS
+dat clone http://MY-SERVER-ADDRESS eukaryota
 ```
+
+(if you are on your own computer, you can go into another folder and do `dat clone ../path/to/original/repo eukaryota` to make a second clone locally in a new folder)
 
 Remember, you can pass an additional argument to clone the data into a custom folder name, otherwise it will use your server address as the folder name.
 
