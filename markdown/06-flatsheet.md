@@ -23,3 +23,12 @@ data-editor organisms.csv 80
 (If running on your machine you can leave off the 80 above and then open `http://localhost:4455`)
 
 Now open the URL from `welcome.txt` in a new tab. You should hopefully see some data!
+
+From the data-editor interface you can do four things:
+
+- edit values in the cells (including a popup editor for long text)
+- add rows
+- add columns
+- export a new csv file
+
+After making some revisions to the data, export a new csv.
