@@ -41,7 +41,8 @@ Thats it! Now let's see what happened to our dataset. Type `dat read`
 to see the content of the blob we wrote:
 
 ```
-$ dat read bob -d people | picture-tube -
+$ dat read bob -d people > exported.png
+$ picture-tube exported.png
 ```
 
 To be performant, dat doesn't store blobs inside the datasets.
