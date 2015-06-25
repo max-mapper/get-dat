@@ -69,7 +69,7 @@ Now you should be able to get the data back out of dat by running `dat export -d
 The output of `dat export -d people` should be something like this:
 
 ```
-$ dat cat
+$ dat export -d people
 {"name":"alice","age":"35","key":"chz650a020000oxa5zpzmd9aj"}
 {"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s"}
 ```
@@ -84,7 +84,7 @@ Run the import command again:
 dat import people.json -d people
 ```
 
-Now when you do `dat cat` you should see duplicates!
+Now when you do `dat export -d people` you should see duplicates!
 
 ```
 $ dat cat

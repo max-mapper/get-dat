@@ -36,4 +36,4 @@ dat clone http://MY-SERVER-ADDRESS eukaryota
 
 Remember, you can pass an additional argument to clone the data into a custom folder name, otherwise it will use your server address as the folder name.
 
-If you `cd` into your newly created dat folder in your computer you should be able to do `dat cat` to print out all of the data, or `dat listen` to run a dat server locally.
+If you `cd` into your newly created dat folder in your computer you should be able to do `dat export` to print out all of the data, or `dat listen` to run a dat server locally.
