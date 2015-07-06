@@ -10,7 +10,7 @@ You can double-click files in the file browser to open them, and editing text in
 
 **When you leave or close this webpage your server will be shut down.**
 
-You'll need to install dat on your local machine so that you can clone your dataset onto your personal computer.
+You'll need to install dat on your local machine so that you can clone your dataset onto your personal computer (used later in the "dat clone" portion of the lesson).
 
 Installing dat takes 2 steps:
 
