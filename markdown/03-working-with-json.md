@@ -61,7 +61,7 @@ Make sure you are still in the same freshly initialized dat repository folder fr
 Import the data into dat, under a dataset called 'people':
 
 ```
-dat import people.json --json -d people
+dat import people.json -d people
 ```
 
 Now you should be able to get the data back out of dat by running `dat export -d people`. 
@@ -87,7 +87,7 @@ dat import people.json -d people
 Now when you do `dat export -d people` you should see duplicates!
 
 ```
-$ dat cat
+$ dat export -d people
 {"name":"alice","age":"35""key":"chz650a020000oxa5zpzmd9aj"}
 {"name":"bob","age":"34","key":"chz650a040001oxa5bpa1ae5s"}
 {"name":"alice","age":"35","key":"chz65ge3z0000qiq4n711iaka"}
