@@ -62,7 +62,7 @@ html, body {
   bottom: 0;
 }
 
-.guide {
+.console {
   position: absolute;
   top: 0;
   left: 50%;
@@ -83,7 +83,7 @@ html, body {
   overflow-y: scroll;
 }
 
-.console {
+.guide {
   position: absolute;
   top: 0;
   left: 0;
