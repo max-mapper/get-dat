@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{> header }}</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="content">
+      {{#if index}}
+        <h2 class="toc">table of contents</h2>
+        <ul class="toc-list">
+          {{#index}}
+            <li><a href="{{ href }}">{{ name }}</a></li>
+          {{/index}}
+        </ul>
+
+      <p><strong>get-dat</strong> is a tutorial that teaches you how to work with datasets using <a href="http://dat-data.com" target="_blank">dat</a>.</p>
+<p>Dat is still very much in the early stages of development, but we hope to enable some really cool collaboration workflows.</p>
+<p>In this panel you will find step by step instructions for this tutorial. There are navigation links at the <strong>bottom</strong> of each page.</p>
+  <p>There is a terminal, file browser, and text editor that is connected to a <strong>docker container</strong> -- that is a computer, in the cloud but accessible right here in your browser!</p>
+<p><strong>When you leave or close this webpage your server will be shut down.</strong></p>
+<p>You can double-click files in the file browser to open them, and editing text in the text editor <strong>auto-saves</strong> your changes to the server.</p>
+<p>Ok, now we&#39;re ready to dive in!
+      <a class="button nextp navlink" href="{{ next }}.html">Let's go!</a>
+</p>
+      {{/if}}
+
+      {{{ content }}}
+      {{#if content}}
+        <header class="site-header">
+          <a class="site-header-text" href="./index.html"><< table of contents</a>
+        </header>
+
+        {{#if previous}}
+          <a class="lastp navlink" href="{{ previous }}.html">Previous: {{ previous }}</a>
+        {{ else }}
+          <div class="navlink"></div>
+        {{/if}}
+
+        {{#if next}}
+          <a class="nextp navlink" href="{{ next }}.html">Next: {{ next }}</a>
+        {{ else }}
+          <div class="navlink"></div>
+        {{/if}}
+      {{/if}}
+    </section>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+</body>
+</html>

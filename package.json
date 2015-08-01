@@ -4,7 +4,7 @@
   "description": "workshop content for learning dat",
   "main": "index.js",
   "scripts": {
-    "render": "submarine markdown guide --header='Get Dat' --footer='<a href=\"https://github.com/maxogden/dat\">dat on github</a>'",
+    "render": "submarine markdown guide --header='Get Dat' --footer='<a href=\"https://github.com/maxogden/dat\">dat on github</a>' --template=guide.html",
     "deploy": "gh-pages-deploy",
     "build": "browserify index.js -o bundle.js && browserify terminal.js -o terminal-bundle.js",
     "start": "beefy index.js:bundle.js terminal.js:terminal-bundle.js"
@@ -24,7 +24,7 @@
   "dependencies": {
     "adventure-time": "^1.0.0",
     "gh-pages-deploy": "^0.1.1",
-    "submarine": "0.0.10"
+    "submarine": "0.2.4"
   },
   "devDependencies": {
     "beefy": "^2.1.1",
