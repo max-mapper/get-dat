@@ -9,33 +9,32 @@
 </head>
 <body>
   <div class="wrapper">
-    <section class="content">
       {{#if index}}
-        <h4 class="toc">table of contents</h4>
+        <img width="100%" src="/static/img/datcat.jpeg" />
+        <section class="content">
+        <h1>Welcome!</h1>
+        <p>This is <strong>get-dat</strong>, a tutorial that teaches you how to work with datasets using <a href="http://dat-data.com" target="_blank">dat</a>. Dat is still very much in the early stages of development, but we hope to enable you with some really effective data collaboration, versioning, and syncing workflows.</p>
+        <h4>table of contents</h4>
         <div class="jumbotron-horizontal-rule"></div>
         <ul class="toc-list">
           {{#index}}
             <li><a href="{{ href }}">{{ name }}</a></li>
           {{/index}}
         </ul>
-
-      <p><strong>get-dat</strong> is a tutorial that teaches you how to work with datasets using <a href="http://dat-data.com" target="_blank">dat</a>.</p>
-      <p>Dat is still very much in the early stages of development, but we hope to enable some really cool collaboration workflows.</p>
-      <p>In this panel you will find step by step instructions for this tutorial. There are navigation links at the <strong>bottom</strong> of each page.</p>
-        <p>There is a terminal, file browser, and text editor that is connected to a <strong>docker container</strong> -- that is a computer, in the cloud but accessible right here in your browser!</p>
+        <p>If you look to your right, you'll see there is a terminal that is connected to a <strong>docker container</strong> -- that is a computer, in the cloud but accessible right here in your browser!</p>
       <p><strong>When you leave or close this webpage your server will be shut down.</strong></p>
       <p>Ok, ready to dive in? <a class="nextp button" href="{{index.0.href}}">Let's go! &raquo;</a>
       </p>
+      </section>
       {{/if}}
 
       {{#if content}}
+      <section class="content">
         <header class="site-header">
           <a class="site-header-text" href="./index.html">table of contents</a>
         </header>
-      {{/if}}
 
       {{{ content }}}
-      {{#if content}}
         <div class="navlinks">
         {{#if next}}
           <a class="nextp button" href="{{ next }}.html">OK, done! &raquo;</a>

@@ -52,6 +52,9 @@ pre {
 .navlinks {
   padding: 20px 20px 100px 30px;
 }
+.toc {
+  padding: 40px 0px 0px 0px;
+}
 .button {
   display: inline-block;
   font-size: 22px;
