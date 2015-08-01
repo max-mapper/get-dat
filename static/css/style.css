@@ -76,7 +76,9 @@ pre {
   height: 2.5rem;
   padding-right: 8px;
 }
-
+.content {
+  padding: 0px 10px;
+}
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -86,6 +88,12 @@ html, body {
 
 .button:hover {
   background-color: #a9ce7f;
+}
+.buttons {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 99999;
 }
 .button {
   display: inline-block;
@@ -129,10 +137,6 @@ html, body {
   top: 0;
   background: #fdfdfd;
   border-bottom: 1px solid #f0f0f0;
-}
-
-.topbar .buttons {
-  float: right;
 }
 
 .topbar ul { padding: 0; margin: 0; list-style: none; padding-right: 5px; }
