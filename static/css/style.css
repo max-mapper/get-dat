@@ -13,10 +13,11 @@ body {
 }
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   color: #333;
+}
+h4, h5 {
+  color: #777;
 }
 h4 {
   font-size: 2rem;
@@ -33,7 +34,7 @@ a:hover {
   text-decoration: underline;
 }
 p {
-  padding: 10px;
+  padding: 10px 0px;
 }
 pre {
   padding: .5em;
@@ -84,7 +85,7 @@ pre {
   padding-right: 8px;
 }
 .content {
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
