@@ -1,6 +1,6 @@
 # dat init
 
-(When you are asked to 'run' something it means you should enter it your terminal)
+(When you are asked to 'run' something it means you should enter it in your terminal)
 
 * Before you do anything, run `ls` to print out the contents of this folder.
 
