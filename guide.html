@@ -24,30 +24,26 @@
       <p>In this panel you will find step by step instructions for this tutorial. There are navigation links at the <strong>bottom</strong> of each page.</p>
         <p>There is a terminal, file browser, and text editor that is connected to a <strong>docker container</strong> -- that is a computer, in the cloud but accessible right here in your browser!</p>
       <p><strong>When you leave or close this webpage your server will be shut down.</strong></p>
-      <p>Ok, ready to dive in? <a class="nextp navlink" href="{{index.0.href}}">Let's go!</a>
+      <p>Ok, ready to dive in? <a class="nextp button" href="{{index.0.href}}">Let's go! &raquo;</a>
       </p>
       {{/if}}
 
       {{#if content}}
         <header class="site-header">
-          <a class="site-header-text" href="./index.html">&laquo; table of contents</a>
+          <a class="site-header-text" href="./index.html">table of contents</a>
         </header>
       {{/if}}
 
       {{{ content }}}
       {{#if content}}
-
-        {{#if previous}}
-          <a class="lastp navlink" href="{{ previous }}.html">Previous: {{ previous }}</a>
-        {{ else }}
-          <div class="navlink"></div>
-        {{/if}}
-
+        <div class="navlinks">
         {{#if next}}
-          <a class="nextp navlink" href="{{ next }}.html">Next: {{ next }}</a>
-        {{ else }}
-          <div class="navlink"></div>
+          <a class="nextp button" href="{{ next }}.html">OK, done! &raquo;</a>
+          {{#if previous}}
+            <a class="lastp navlink" href="{{ previous }}.html">&laquo; back</a>
+          {{/if}}
         {{/if}}
+        </div>
       {{/if}}
     </section>
   </div>

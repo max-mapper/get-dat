@@ -49,13 +49,16 @@ pre {
   color: #959ba4;
   font-size: 14px;
 }
+.navlinks {
+  padding: 20px 20px 100px 30px;
+}
 .button {
   display: inline-block;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: white;
   background-color: #35b44f;
-  padding: 7px 14px;
+  padding: 18px 14px;
   border-radius: 5px;
 }
 .button.button-light {
@@ -63,6 +66,7 @@ pre {
 }
 .button:hover {
   background-color: #a9ce7f;
+  text-decoration: none !important;
 }
 /** SPLASH **/
 .rsaquo {
@@ -110,6 +114,10 @@ html, body {
 .CodeMirror-focused div.CodeMirror-selected { background: rgba(0,0,255,0.1); }
 .CodeMirror .errorLine { background: rgba(255,0,0,0.25); }
 .container { }
+
+.nextp {
+  float: right;
+}
 
 .datLogo {
   padding: 3px 5px 0 5px;
