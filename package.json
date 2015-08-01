@@ -4,7 +4,7 @@
   "description": "workshop content for learning dat",
   "main": "index.js",
   "scripts": {
-    "render": "submarine markdown guide --header='Get Dat' --footer='<a href=\"https://github.com/maxogden/dat\">dat on github</a>' --template=guide.html",
+    "render": "submarine markdown guide --template=guide.html",
     "deploy": "gh-pages-deploy",
     "build": "browserify index.js -o bundle.js && browserify terminal.js -o terminal-bundle.js",
     "start": "beefy index.js:bundle.js terminal.js:terminal-bundle.js"
