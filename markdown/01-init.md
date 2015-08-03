@@ -12,6 +12,6 @@
 
 1. Run `dat init`. This will establish the current directory as a dat repository, with dat’s data stored in a hidden folder called `.dat`.
 
-1. Run `ls -a` again and note that `.dat` is now listed.
+1. Run `ls -a` again and note that `data.dat` is now listed.
 
-The `.dat` directory is where dat’s data is stored. Note that it’s a _hidden_ directory. If a directory is hidden it generally means you don't need to open up the files inside very often, and that’s true of dat’s files.
+The `data.dat` directory is where dat’s data is stored.
