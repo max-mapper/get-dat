@@ -1,34 +1,27 @@
 # Editing data with flatsheet
 
-[Flatsheet](http://flatsheet.io/) is an open source data editor application.
+[Flatsheet](http://flatsheet.io/) is an open source data editor. For this workshop we have prepared `data-editor`, a standalone version of Flatsheet
 
-For this workshop we have prepared `data-editor`, a standalone version of Flatsheet
+First, get flatsheet by running `npm install data-editor -g`.
 
-(If doing this on your own machine you can get flatsheet by running `npm install data-editor -g`)
-
-First lets export a CSV of the eukaryota data that you cloned in the last section.
+Let’s export a CSV file of the eukaryota data that you cloned in the last section.
 
 ```
 dat export -d organisms -f csv > organisms.csv
 ```
 
-Now you should have a file called `organisms.csv`.
-
-To edit the file using `data-editor`, run this commend:
+Now you should have a file called `organisms.csv`. To edit this CSV file using `data-editor`, run:
 
 ```
-data-editor organisms.csv 80
+data-editor organisms.csv
 ```
 
-(If running on your machine you can leave off the 80 above and then open `http://localhost:4455`)
-
-Now open the URL from `welcome.txt` in a new tab. You should hopefully see some data!
+This makes `organisms.csv` editable within a web-based interface, which you can use by opening [http://localhost:4455](http://localhost:4455) in your web browser.
 
 From the data-editor interface you can do four things:
 
-- edit values in the cells (including a popup editor for long text)
+- edit values in the cells
 - add rows
 - add columns
-- export a new csv file
+- export a new CSV file
 
-After making some revisions to the data, export a new csv.
