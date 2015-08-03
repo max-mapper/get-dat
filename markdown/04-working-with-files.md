@@ -1,20 +1,13 @@
 # Write some non-tabular data
 
-So far we've only worked with simple text-based data in the form of JSON
-objects, stored as rows inside dat. But what if you have a large non-tabular
-file that you want store in dat?
+So far we've only worked with simple text-based data in the form of JSON objects, stored as rows inside dat. But what if you have a large non-tabular file that you want store in dat?
 
-To accomondate this, dat is capable of adding files to a dataset called 'files.'
-These attachments are sometimes called blobs, which is short for "binary large
-object". A blob can be any form of binary data, but for now just think
-of a blob as a file, like one you might put in Dropbox or attach to an
+To accommodate this, dat is capable of adding files to a dataset called 'files.' These attachments are sometimes called blobs, which is short for "binary large object". A blob can be any form of binary data, but for now just think of a blob as a file, like one you might put in Dropbox or attach to an
 email.
 
 ## Adding blobs to dat
 
-Let's try and write a file to dat. For convenience we've
-prepared a picture of Bob for you and put it on your server under
-`/pictures`. Let see it first. Run this:
+Let's try and write a file to dat. For convenience we've prepared a picture of Bob for you and put it on your server under `/pictures`. Let see it first. Run this:
 
 ```
 picture-tube /pictures/bob.png
