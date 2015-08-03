@@ -36,4 +36,4 @@ Once you have opened `package.json`, you can the default dat remote like so:
 }
 ```
 
-So, from now on, you can simply type `dat pull` to get the latest changes from "http://eukaryota.dathub.org", or `dat push` to update eukaryota with your latest changes.
+So, from now on, you can simply type `dat pull` to get the latest changes from http://eukaryota.dathub.org, or `dat push` to update eukaryota with your latest changes.
