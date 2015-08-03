@@ -238,15 +238,7 @@ html, body {
   top: 3px;
   width: 17px;
   height: 17px;
-  background-image: url('/static/img/octocat-green.png');
-}
-.twitter-green {
-  display: inline-block;
-  position: relative;
-  top: 3px;
-  width: 17px;
-  height: 17px;
-  background-image: url('/static/img/twitter-green.png');
+  background-image: url('static/img/octocat-green.png');
 }
 
 /* overrides */
