@@ -8,9 +8,9 @@
 
 1. There should be a `welcome.txt` file. You can read it by typing `cat welcome.txt`.
 
-1. Now run `ls -a`. This displays a list of all files in the directory—the `-a` stands for “all” and instructs `ls` to show hidden files, too. (Hidden filenames start with a `.`.)
+1. Now run `ls`. This displays a list of all files in the directory.
 
-1. Run `dat init`. This will establish the current directory as a dat repository, with dat’s data stored in a hidden folder called `.dat`.
+1. Run `dat init`. This will establish the current directory as a dat repository, with dat’s data stored `data.dat`. You'll also see a `package.json` file, which will be used to store configuration data.
 
 1. Run `ls -a` again and note that `data.dat` is now listed.
 
