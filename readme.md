@@ -1,8 +1,8 @@
-# get-dat
+# try-dat
 
 ## A command line tutorial to learn `dat`
 
-This repo contains the content for the workshop. 
+This repo contains the content for the workshop.
 
 First install dat on your command line: `npm install dat -g`
 
