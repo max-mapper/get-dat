@@ -1,10 +1,10 @@
 # Extra credit
 
-In addition to cloning + sharing datasets (which is what `dat` is built for), you also need to be able to easily *use* datasets after you've downloaded them.
+In addition to cloning and sharing datasets (which is what `dat` is built for), you also need to be able to easily *use* datasets after you've downloaded them.
 
-We have also been working on a tool called <a href="https://github.com/datproject/gasket" target="_blank">gasket</a> that is a complementary tool to `dat` that lets you package up a data pipeline so that others can easily run your pipeline.
+We have also been working on a tool called <a href="https://github.com/datproject/gasket" target="_blank">gasket</a> that is a complementary tool to dat that lets you package up a data pipeline so that others can easily run your pipeline.
 
-<a href="https://github.com/bmpvieira" target="_blank">Bruno Vieira</a>, a bioinformatician on the Dat team, has built a pipeline using gasket that takes the `eukaryota` data that we worked with earlier and uses it to download genetic data and run a gene sequence alignment on the data using tools from his <a href="https://github.com/bionode" target="_blank">bionode project</a>.
+<a href="https://github.com/bmpvieira" target="_blank">Bruno Vieira</a>, a bioinformatician on the dat team, has built a pipeline using gasket that takes the `eukaryota` data that we worked with earlier and uses it to download genetic data and run a gene sequence alignment on the data using tools from his <a href="https://github.com/bionode" target="_blank">bionode project</a>.
 
 Here's the pipeline, split up into 4 parts:
 
