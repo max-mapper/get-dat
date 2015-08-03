@@ -23,7 +23,7 @@ dat pull <url>
 Pulls the checkout at the given url to the current dat.
 ```
 
-But let's say we always want to `dat pull` from the eukaryota repository. To do this, first open `package.json` using a terminal text editor like `vim`, `nano` or `pico` by clicking the toggle editor link in the bottom right of this web page.
+But let's say we always want to `dat pull` from the eukaryota repository. To do this, first open `package.json` using a `vim or `pico`, or by clicking the **toggle editor** link in the bottom right of this web page.
 
 Once you have opened `package.json`, you can the default dat remote like so:
 
