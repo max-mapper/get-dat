@@ -13,7 +13,7 @@ if (!qs.id) {
 var opts = {
   guide: 'guide/',
   console: 'terminal.html',
-  server: qs.server || (production ? 'try-dat.com' : 'dev.try-dat.com:8080'),
+  server: qs.server || (production ? 'docker.try-dat.com' : 'dev.try-dat.com:8080'),
   id: qs.id
 }
 
