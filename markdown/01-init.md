@@ -10,7 +10,7 @@
 
 1. Now run `ls`. This displays a list of all files in the directory.
 
-1. Run `dat init`. This will establish the current directory as a dat repository, with dat’s data stored `data.dat`. You'll also see a `package.json` file, which will be used to store configuration data.
+1. Run `dat init`. This will establish the current directory as a dat repository, with dat’s data stored `data.dat`. You'll also see a `package.json` file, which will be used to store configuration data  (see [05-dat-config](05-dat-json-config.html)).
 
 1. Run `ls -a` again and note that `data.dat` is now listed.
 
