@@ -238,7 +238,7 @@ html, body {
   top: 3px;
   width: 17px;
   height: 17px;
-  background-image: url('static/img/octocat-green.png');
+  background-image: url('../img/octocat-green.png');
 }
 
 /* overrides */
