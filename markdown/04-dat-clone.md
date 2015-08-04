@@ -53,14 +53,14 @@ $ dat
 
 #### Sharing a dat
 
-First, run `dat serve --port=80` on the server.
+First, run `dat serve --port=80`. This makes the dat available at http://MY-SERVER-ADDRESS. Your own server address will be available in `welcome.txt` -- find it by typing `cat welcome.txt`.
 
-Then, run this command on your laptop, using your own server address from `welcome.txt`
+Then, run the following command on your laptop to get the data:
 
 ```
 dat clone http://MY-SERVER-ADDRESS eukaryota
 ```
 
-Remember, you can pass an additional argument to clone the data into a custom folder name, otherwise it will use your server address as the folder name.
+You can pass an additional argument, in this case, `eukaryota`, to clone the data into a custom folder name. Otherwise, it will use your server address as the folder name.
 
-If you `cd` into your newly created dat folder in your computer you should be able to do `dat status` to print out a summary of the data repository.
+If you `cd` into your new dat folder `eukaryota`, you should be able to do `dat status` to print out a summary of the data repository.
