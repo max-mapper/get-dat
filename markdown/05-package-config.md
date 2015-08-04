@@ -23,7 +23,9 @@ dat pull <url>
 Pulls the checkout at the given url to the current dat.
 ```
 
-But let's say we always want to `dat pull` from the eukaryota repository. To do this, first open `package.json` using `vim`, `pico`, or by clicking the **toggle editor** link in the bottom right of this web page.
+But let's say we **always** want to `dat pull` from the eukaryota repository. That means, by default, `dat pull` and `dat push` would need to use this URL by default.
+
+To do this, we will first open `package.json` using `vim`, `pico`, or by clicking the **toggle editor** link in the bottom right of this web page.
 
 Once you have opened `package.json`, you can the default dat remote like so:
 
@@ -36,4 +38,4 @@ Once you have opened `package.json`, you can the default dat remote like so:
 }
 ```
 
-So, from now on, you can simply type `dat pull` to get the latest changes from http://eukaryota.dathub.org, or `dat push` to update eukaryota with your latest changes.
+That's it! From now on, you can simply type `dat pull` to get the latest changes from http://eukaryota.dathub.org, or `dat push` to update eukaryota with your latest changes.
