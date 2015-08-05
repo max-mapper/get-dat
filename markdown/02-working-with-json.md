@@ -15,7 +15,7 @@ Newline-delimited JSON a little different than regular JSON. Standard JSON looks
 ]
 ```
 
-The two values are wrapped in array brackets (`[...]`) and separated by a comma (`,`). Newline-delimited JSIN lacks these two features:
+The two values are wrapped in array brackets (`[...]`) and separated by a comma (`,`). Newline-delimited JSON lacks these two features:
 
 ```
 {"name": "alice"}
@@ -93,7 +93,7 @@ $ dat export -d people
 
 We imported the same data into our dat again, and because our imported JSON lacks a key, dat just assumes the data is new data.
 
-For some use cases importing data without a key is perfectly fine behavior, but in other cases you will want to make sure your incoming data has one. it all depends on the nature of the data that you are importing.
+For some use cases importing data without a key is perfectly fine behavior, but in other cases you will want to make sure your incoming data has one. It all depends on the nature of the data that you are importing.
 
 ## Importing JSON with keys
 
