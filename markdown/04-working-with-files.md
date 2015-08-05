@@ -16,7 +16,7 @@ Notice the value of `version` has been updated, indicating that the dat changed 
 
 ## Reading blobs
 
-Type `ls`. You can see the cat has now appeared in your filesystem. This is great for working on these files in other programs, but dat can also read their binary contents back out using `read`.
+Do an `ls`. You can see that the cat has now appeared on your filesystem. This is great for working with other programs. If you want to integrate dat programmatically, you can have dat read their binary contents back out using `read`.
 
 We need to pipe its output into a file to avoid displaying raw PNG data in the terminal (which just looks like nonsense):
 

@@ -2,9 +2,9 @@
 
 In addition to cloning and sharing datasets (which is what `dat` is built for), you also need to be able to easily *use* datasets after you've downloaded them.
 
-We have also been working on a tool called <a href="https://github.com/datproject/gasket" target="_blank">gasket</a> that is a complementary tool to dat that lets you package up a data pipeline so that others can easily run your pipeline.
+We have also been working on a tool called <a href="https://github.com/datproject/gasket" target="_blank">gasket</a> that lets you package up a data pipeline so that others can easily run your pipeline.
 
-<a href="https://github.com/bmpvieira" target="_blank">Bruno Vieira</a>, a bioinformatician on the dat team, has built a pipeline using gasket that takes the `eukaryota` data that we worked with earlier and uses it to download genetic data and run a gene sequence alignment on the data using tools from his <a href="https://github.com/bionode" target="_blank">bionode project</a>.
+<a href="https://github.com/bmpvieira" target="_blank">Bruno Vieira</a>, a bioinformatician, has built a pipeline using gasket that takes the `eukaryota` data that we worked with earlier and uses it to download genetic data and run a gene sequence alignment on the data using tools from his <a href="https://github.com/bionode" target="_blank">bionode project</a>.
 
 Here's the pipeline, split up into 4 parts:
 
@@ -60,7 +60,13 @@ We can skip the `import-data` pipeline since we have already cloned the `eukaryo
 
 The second pipeline, `search-ncbi`, starts by doing `dat export` and then takes the data from dat and uses it to download additional datasets from NCBI (National Center for Biotechnology Information), a server where lots of bioinformatics datasets are hosted.
 
-Run this pipeline: `gasket run search-ncbi`.
+Run this pipeline:
+
+```
+gasket run search-ncbi
+```
+
+## More output
 
 By default there is no output while the pipeline is running, but if you want to see what's happening under the hood you can run the pipeline again with the `DEBUG` environment variable set to `*` (to show all possible debug output):
 
@@ -69,6 +75,8 @@ DEBUG=* gasket run search-ncbi
 ```
 
 This pipeline should create a couple of folders and download some files into them.
+
+## Sequence alignment
 
 The next pipeline, `index-and-align`, uses the downloaded genetic data from the `search-ncbi` pipeline and runs process called a DNA sequence alignment.
 

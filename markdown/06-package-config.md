@@ -25,9 +25,7 @@ Pulls the checkout at the given url to the current dat.
 
 But let's say we **always** want to `dat pull` from the eukaryota repository. That means, by default, `dat pull` and `dat push` would need to use this URL by default.
 
-To do this, we will first open `package.json` using `vim`, `pico`, or by clicking the **toggle editor** link in the bottom right of this web page.
-
-Once you have opened `package.json`, you can the default dat remote like so:
+To do this, we will first open `package.json` to edit the default dat remote like so:
 
 ```
 {
