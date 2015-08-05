@@ -35,14 +35,34 @@ After you import, you should see that 1 row was added, like `Wrote [+1, -0]. If 
 
 ## Log
 
-To see what changed in your dat, type
+To see what changed in your dat, type:
 
 ```
 dat log
 ```
 
-You'll see a history of changes
+You'll see a history of changes, including the version, the date changed, and any metadata stored in the message.
+
+## Go back in time
+
+To go back in time, you can `dat checkout` for a non-destructive rollback to a version in the past. Data is never deleted from dat -- only different views of the data are made accessible given a particular version.
+
+Find the version of the first import, and copy it. If you used a message, it should be the one that says 'Added cities dataset.'
 
 ```
-dat log
+dat checkout <version>
 ```
+
+If you run `dat status` and `dat export -d cities`, you should now see that the dat repository is at the same version it was when you first imported the cities dataset.
+
+You can always go back to the latest change with
+
+```
+dat checkout latest
+```
+
+## Forks, branches, conflicts?
+
+After checking out a dataset to a previous point in the past, you can still add more data. However, adding to a version that is not the latest creates a new fork in the dataset.
+
+Although forks could be represented as conflicts to be merged immediately (as one might expect in a version control system such as Git), dat's philosophy is the opposite. We think that data tools should embrace forks as key support for experimentation during the scientific process. When a user pulls from a peer, forks will also be pulled so that each user has a complete picture of the graph.
