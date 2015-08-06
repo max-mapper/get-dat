@@ -69,12 +69,7 @@ Get the data back out of dat by running:
 dat export -d people
 ```
 
-The output will look about like this:
-
-```
-{"name":"alice","age":"35"}
-{"name":"bob","age":"34"}
-```
+The output should look the same. Nice! So what happens when we want to update the data?
 
 ## Updating the data
 
@@ -91,19 +86,15 @@ We imported the updated data into dat. So, we should see bob is now 35, right?
 
 ```
 $ dat export -d people
-{"name":"alice","age":"35"}
-{"name":"bob","age":"34"}
-{"name":"alice","age":"35"}
-{"name":"bob","age":"35"}
 ```
 
-When you run this, you'll see duplicate data. We imported the same data into our dat again, and because our data lacks a **unique key**, dat just assumes the data is new data, appending it to the end.
+Oh no. When you run this, you'll see duplicate data. We imported the same data into our dat again, and because our data lacks a **unique key**, dat just assumes the data is new data, appending it to the end.
 
 ## Importing JSON with keys
 
 Let's wipe the slate and start over again. Run `dat destroy` to get rid of the data we imported above, and then run `dat init` to initialize a fresh dat store.
 
-Now import the data again, but this time let's specify that the `name` field should be used as the key:
+Now import the data again, but this time let's specify that the `name` field should be used as the key (we know this isn't probably a unique key, but let's entertain it for now).
 
 ```
 $ dat import people.json -d people -k name
