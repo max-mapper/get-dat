@@ -9,7 +9,7 @@ cityId, name, region, country
 35682579, Copenhagen, Hovedstaden, Denmark
 ```
 
-Now, let's import it into dat, but this time we can add a message. It's nice to add a message when you import data so that other people (including your future self) can get a quick overview of what happened to the dataset overtime.
+Now, let's import it into dat, but this time we can add a message. It's nice to add a message when you import data so that other people (including your future self) can get a quick overview of what happened to the repository over time.
 
 ```
 dat import cities.csv -d cities -k cityId  -m "Added cities dataset"
@@ -29,9 +29,11 @@ We can see what the current version is, how many datasets there are, how big the
 
 ## Updating data
 
-Now, open the cities.csv file and add another row to the csv data. Make sure you create all fields: `cityId` (unique), `name`, `region`, and `country`. Then import the new data with a message, perhaps something like 'added a new city'.
+Now, open the cities.csv file and add another row to the csv data. Make sure you create all fields: `cityId` (unique), `name`, `region`, and `country`.
 
-After you import, you should see that 1 row was added, like `Wrote [+1, -0]. If 4 rows were added, that means you forgot to add the `--key=cityId`. Don't forget to specify the unique key!
+Then, import the new data with a message, perhaps something like 'added a new city'.
+
+After you import, you should see that 1 row was added, like `Wrote [+1, -0]. If 4 rows were added, that means you forgot to add the `--key=cityId`. Knowing your key is important for dat repositories!
 
 ## Log
 
@@ -43,9 +45,9 @@ dat log
 
 You'll see a history of changes, including the version, the date changed, and any metadata stored in the message.
 
-## Go back in time
+## Go to another version
 
-To go back in time, you can `dat checkout` for a non-destructive rollback to a version in the past. Data is never deleted from dat -- only different views of the data are made accessible given a particular version.
+You can always change the dat repository (the entire repository, not just a dataset) to another version. Data is never deleted from dat -- only different views of the data are made accessible given a particular version.
 
 Find the version of the first import, and copy it. If you used a message, it should be the one that says 'Added cities dataset.'
 
@@ -59,6 +61,12 @@ You can always go back to the latest change with
 
 ```
 dat checkout latest
+```
+
+And see what datasets currently exist with:
+
+```
+dat datasets
 ```
 
 ## Forks, branches, conflicts?

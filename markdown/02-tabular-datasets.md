@@ -87,7 +87,7 @@ Done importing data.
 Version: c29d843864f8271d6f1238e150074043bef01bdfa9ab3fad3c939806a87ad2d1
 ```
 
-We imported the updated data into dat. So, we should see bob's now 35, right?
+We imported the updated data into dat. So, we should see bob is now 35, right?
 
 ```
 $ dat export -d people
@@ -97,8 +97,7 @@ $ dat export -d people
 {"name":"bob","age":"35"}
 ```
 
-When you run this, you’ll see duplicate data. We imported the same data into our dat again, and because our imported JSON lacks a **unique key**, dat just assumes the data is new data.
-
+When you run this, you’ll see duplicate data. We imported the same data into our dat again, and because our data lacks a **unique key**, dat just assumes the data is new data, appending it to the end.
 
 ## Importing JSON with keys
 
@@ -108,20 +107,9 @@ Now import the data again, but this time let’s specify that the `name` field s
 
 ```
 $ dat import people.json -d people -k name
-Wrote [+2, -0].
-Done importing data.
-Version: 5911fe38f6c0fb1326b05510d761267213a7948151ec5e17259094341e40566d
 ```
 
-If you run `dat export -d people` again, you'll see the data:
-
-```
-$ dat export -d people
-{"name":"alice","age":"35"}
-{"name":"bob","age":"35"}
-```
-
-Now, if we run the import a second time, we import the data on top of the existing data:
+Now, if we run the import a second time with a key, dat will attempt to update the rows.
 
 ```
 $ dat import people.json --key=name -d people
