@@ -1,6 +1,6 @@
 # Write some tabular data
 
-Let’s put some data into dat.
+Let's put some data into dat.
 
 There are three formats that dat can import: <a href="http://ndjson.org/" target="_blank">Newline-delimited JSON</a>, CSV and <a href="https://developers.google.com/protocol-buffers/" target="_blank">Protocol Buffers</a>. In this tutorial we will work with JSON.
 
@@ -22,7 +22,7 @@ The two values are wrapped in array brackets (`[...]`) and separated by a comma 
 {"name": "bob"}
 ```
 
-As you can see, it just means JSON objects separated by only a single line break. It’s a very small change, but it’s necessary to support parsing arbitrary subsets of a larger JSON file.
+As you can see, it just means JSON objects separated by only a single line break. It's a very small change, but it's necessary to support parsing arbitrary subsets of a larger JSON file.
 
 Note that the following is _not_ valid newline-delimited JSON:
 
@@ -35,7 +35,7 @@ Note that the following is _not_ valid newline-delimited JSON:
 }
 ```
 
-That’s because it uses line breaks to format the JSON by pretty-printing it. In newline-delimited JSON the only time you will see a line break (AKA a “newline”) is to separate two objects.
+That's because it uses line breaks to format the JSON by pretty-printing it. In newline-delimited JSON the only time you will see a line break (AKA a “newline”) is to separate two objects.
 
 ## Save some JSON to a file
 
@@ -97,13 +97,13 @@ $ dat export -d people
 {"name":"bob","age":"35"}
 ```
 
-When you run this, you’ll see duplicate data. We imported the same data into our dat again, and because our data lacks a **unique key**, dat just assumes the data is new data, appending it to the end.
+When you run this, you'll see duplicate data. We imported the same data into our dat again, and because our data lacks a **unique key**, dat just assumes the data is new data, appending it to the end.
 
 ## Importing JSON with keys
 
-Let’s wipe the slate and start over again. Run `dat destroy` to get rid of the data we imported above, and then run `dat init` to initialize a fresh dat store.
+Let's wipe the slate and start over again. Run `dat destroy` to get rid of the data we imported above, and then run `dat init` to initialize a fresh dat store.
 
-Now import the data again, but this time let’s specify that the `name` field should be used as the key:
+Now import the data again, but this time let's specify that the `name` field should be used as the key:
 
 ```
 $ dat import people.json -d people -k name
@@ -117,7 +117,7 @@ Wrote [+0, -0].
 No changes were made.
 ```
 
-Dat only writes new data if the data has changed. And because we’re using a unique key, running `dat export -d people` shows no duplicates.
+Dat only writes new data if the data has changed. And because we're using a unique key, running `dat export -d people` shows no duplicates.
 
 If you update alice's age to `"36"` and run `dat import` again, you'll see that dat will write 1 row -- alice's.
 

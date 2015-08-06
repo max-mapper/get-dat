@@ -34,7 +34,7 @@ You'll need to install dat on your local machine so that you can clone your data
 #### Installing dat is a 2-step process:
 
 - First, <a href="http://nodejs.org" target="_blank">download the node.js installer for your OS</a> and walk through the installer. This will install the `node` and `npm` commands onto your computer.
-- Second, open your terminal program (“Terminal” on Mac, "Command Prompt" on Windows) and install dat by running `npm install dat -g`. This make take a few minutes.
+- Second, open your terminal program ("Terminal" on Mac, "Command Prompt" on Windows) and install dat by running `npm install dat -g`. This make take a few minutes.
 
 When the installation finishes, you should be able to run the `dat` command in your terminal and see output like this:
 ```
@@ -51,7 +51,7 @@ $ dat
 **If you run into permissions or `EACCESS` error, run the install command again with sudo: `sudo npm install dat -g`**
 
 
-#### Sharing a dat
+## Sharing a dat
 
 First, run `dat serve --port=80`. This makes the dat available at http://MY-SERVER-ADDRESS. Your own server address will be available in `welcome.txt` -- find it by typing `cat welcome.txt`.
 

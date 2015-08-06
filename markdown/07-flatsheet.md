@@ -11,7 +11,7 @@ From the data-editor interface you can do four things:
 - add columns
 - export a new CSV file
 
-Let’s export a CSV file of the eukaryota data that you cloned in the last section.
+Let's export a CSV file of the eukaryota data that you cloned in the last section.
 
 ```
 dat export -d organisms -f csv > organisms.csv

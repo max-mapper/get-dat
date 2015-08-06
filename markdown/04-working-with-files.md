@@ -12,7 +12,9 @@ Let's store a file in dat. First, find an image online that you'd like to import
 dat write http://try-dat.com/static/img/wildcat.jpg -m "Added a wildcat because I can."
 ```
 
-Notice the value of `version` has been updated, indicating that the dat changed with the storage of `wildcat.jpg`. You can also see
+Notice the value of `version` has been updated, indicating that the dat changed with the storage of `wildcat.jpg`.
+
+Every time you write data to dat -- tabular or non tabular -- a new version snapshot is created of the entire dat.
 
 ## Reading blobs
 
@@ -26,5 +28,5 @@ $ dat read wildcat.jpg > wildcat-is-out-of-dat.jpg
 
 You can double-click on `wildcat.jpg` to open it up and view it, if you like.
 
-For the sake of speed and efficiency, dat doesn't store blobs inside the datasets. Instead they're kept in a "blob store"—a special directory- referred to using a unique "blob key."
+For the sake of speed and efficiency, dat doesn't store blobs inside the datasets. Instead they're kept in a "blob store" -- a special directory -- with each having an indexed "blob key."
 
