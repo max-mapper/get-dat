@@ -33,7 +33,7 @@ Now, open the cities.csv file and add another row to the csv data. Make sure you
 
 Then, import the new data with a message, perhaps something like 'added a new city'.
 
-After you import, you should see that 1 row was added, like `Wrote [+1, -0]. If 4 rows were added, that means you forgot to add the `--key=cityId`. Knowing your key is important for dat repositories!
+After you import, you should see that 1 row was added, like `Wrote [+1, -0]`. If 4 rows were added, that means you forgot to add the `--key=cityId`. Knowing your key is important for dat repositories!
 
 ## Log
 
