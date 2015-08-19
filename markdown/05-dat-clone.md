@@ -1,12 +1,12 @@
 # dat clone
 
-You can use dat to distribute datasets to others. dat is transport-agnostic, so it is well-suited for typical transport protocols such as HTTP or SSH, which means any existing authentication setup is supported.
+You can use dat to distribute datasets to others people. dat is transport-agnostic, so it is well-suited for typical transport protocols such as HTTP or SSH, which means any existing authentication setup is supported.
 
-For example, once you create your dat with `dat init`, if you put it on a web server, then others can run `dat clone ssh://example.com/path/to/dat` to download a full copy of the dat, including all rows, blobs (files), and version history.
+For example, once you create your dat with `dat init`, then other people can run `dat clone ssh://example.com/path/to/dat` to download a full copy of the dat, including all rows, blobs (files), and version history.
 
 ## Cloning a dat
 
-We host a dat dataset with some genome data in it at <a href="http://eukaryota.dathub.org/" target="_blank">eukaryota.dathub.org</a>. You can clone that dataset onto your local system by running:
+We host a dat dataset with some genomic data in it at <a href="http://eukaryota.dathub.org/" target="_blank">eukaryota.dathub.org</a>. You can clone that dataset onto your local system by running:
 
 ```
 dat clone http://eukaryota.dathub.org eukaryota
@@ -16,7 +16,9 @@ This will clone the dataset into a folder called `eukaryota`. You can change the
 
 In the terminal, run `cd eukaryota` to interact with the newly-cloned dat.
 
-Try running `dat status` to see how many datasets, keys, and files are in the dat.
+Run `dat status` to see how many datasets, keys, and files are in the dat.
+
+Run `dat datasets` to for a list of the datasets that are in the dat.
 
 Then, try `dat export -d organisms --limit=1` to print out the first row from the dataset. You will see something like this:
 
@@ -26,10 +28,9 @@ Then, try `dat export -d organisms --limit=1` to print out the first row from th
 
 ## Cloning a clone
 
-So you've cloned a dataset and re-hosted it on a public server. You don't own the original dataset (`eukaryota.dathub.org`) but you *do* own your clone. This means you can edit your copy and re-distribute your edited versions for others to clone.
+So you've cloned a dataset and re-hosted it on a public server. You don't own the original dataset (which is at `eukaryota.dathub.org`) but you *do* own your clone. This means you can edit your copy and re-distribute your edited versions for others to clone.
 
-Now, let's try cloning your copy of the eukaryota data from this browser environment.
-You'll need to install dat on your local machine so that you can clone your dataset onto your computer.
+Now, let's try cloning your copy of the eukaryota data from this browser environment. You'll need to install dat on your local machine so that you can clone your dataset onto your computer.
 
 #### Installing dat is a 2-step process:
 
@@ -61,6 +62,6 @@ Then, run the following command on your laptop to get the data:
 dat clone http://MY-SERVER-ADDRESS eukaryota
 ```
 
-You can pass an additional argument, in this case, `eukaryota`, to clone the data into a custom folder name. Otherwise, it will use your server address as the folder name.
+You can pass an additional argument, in this case `eukaryota`, to clone the data into a custom folder name. Otherwise, it will use your server address as the folder name.
 
 If you `cd` into your new dat folder `eukaryota`, you should be able to do `dat status` to print out a summary of the data repository.
