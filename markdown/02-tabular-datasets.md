@@ -113,11 +113,9 @@ Now, if we run the import a second time with a key, dat will attempt to update t
 
 ```
 $ dat import people.json --key=name -d people
-Wrote [+0, -0].
-No changes were made.
 ```
 
-Dat only writes new data if the data has changed. And because we're using a unique key, running `dat export -d people` shows no duplicates.
+Because we're using a unique key, running `dat export -d people` shows no duplicates.
 
 If you update Alice's age to `36` and run `dat import` again, dat will update 1 row—Alice's.
 
