@@ -7,10 +7,10 @@ Dat is currently distributed using `npm`. We recommend downloading `node` and `n
 Once you have downloaded npm, install dat:
 
 ```
-npm install -g dat@next
+npm install -g dat
 ```
 
-You should then be able to run:
+This means that dat is now installed on your system.
 
 ```
 $ dat
