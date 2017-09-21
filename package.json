@@ -7,7 +7,7 @@
     "render": "submarine markdown guide --template=guide.html",
     "deploy": "gh-pages-deploy",
     "build": "browserify index.js -o bundle.js && browserify terminal.js -o terminal-bundle.js",
-    "start": "beefy index.js:bundle.js terminal.js:terminal-bundle.js"
+    "start": "wzrd index.js:bundle.js terminal.js:terminal-bundle.js"
   },
   "author": "max ogden",
   "license": "BSD",
@@ -27,9 +27,8 @@
     "submarine": "0.2.4"
   },
   "devDependencies": {
-    "beefy": "^2.1.1",
-    "browserify": "^6.1.0",
-    "npm-watch": "0.0.0"
+    "browserify": "^14.4.0",
+    "wzrd": "^1.5.0"
   },
   "dat": {}
 }

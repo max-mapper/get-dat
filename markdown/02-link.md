@@ -2,35 +2,35 @@
 
 In this folder, you'll see:
 
-  - `bob.png`, a wonderful picture of Bob Marley.
+  - `cat.png`, a wonderful picture of a cat
   - `welcome.txt`, information about this server.
 
 Let's get these files to your local machine using `dat`.
 
-## `dat link`
+## `dat share`
 
 First, let's create a link that represents these files. Type:
 
 ```
-$ dat link
+$ dat share
 ```
 
 This will create a link, that looks like `dat://...`.  Your output might look something like this:
 
 ```
-$ dat link
-Scanning folder, found 2 files in 1 directories.
-dat://a9933c3d00e1134e5814a0fe2b0f1166885f523dfe0d135a39a2ca4b43840d83
+$ dat share
+Created new dat
+dat://5a4575c632d1a573...
 ```
 
-The data will now available via the global Dat decentralized network, which works like BitTorrent. 
+As long as the `dat share` process stays running the data will be available via the global Dat decentralized network to anyone who has that link.
 
 ## Downloading
 
 On your local computer, use the dat link from your terminal output to get the image and welcome.txt:
 
 ```
-dat dat://a9933c3d00e1134e5814a0fe2b0f1166885f523dfe0d135a39a2ca4b43840d83
+dat clone dat://replace-with-your-dat-link-here
 ```
 
-The files will be downloaded inside of the current directory. The process will stay open, re-hosting the data.
+The files will be downloaded inside of the current directory. Check that they match.

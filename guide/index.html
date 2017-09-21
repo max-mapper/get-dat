@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>{{> header }}</title>
+  <title>Submarine</title>
   <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="wrapper">
-      {{#if index}}
         <img width="100%" src="../static/img/datcat.jpeg" />
         <section class="content">
         <h1>Welcome!</h1>
@@ -17,31 +16,20 @@
         <h4>Table of Contents</h4>
         <div class="jumbotron-horizontal-rule"></div>
         <ul class="toc-list">
-          {{#index}}
-            <li><a href="{{ href }}">{{ name }}</a></li>
-          {{/index}}
+            <li><a href="01-install.html">01-install</a></li>
+            <li><a href="02-link.html">02-link</a></li>
+            <li><a href="03-modify.html">03-modify</a></li>
+            <li><a href="04-live.html">04-live</a></li>
+            <li><a href="05-website.html">05-website</a></li>
+            <li><a href="100-beaker.html">100-beaker</a></li>
         </ul>
         <p>If you look to your right, you'll see there is a terminal that is connected to a <strong>docker container</strong> -- that is a remote Linux computer, in the cloud but accessible right here in your browser!</p>
         <p>Below the terminal, there's a filebrowser and an editor. These are connected to the same machine. Every time you type in the editor, try-dat automatically saves the file. Groovy.</p>
       <p><strong>When you leave or close this webpage your server will be shut down.</strong></p>
-      <p>Ok, ready to dive in? <a class="nextp button" href="{{index.0.href}}">Let's go! &raquo;</a>
+      <p>Ok, ready to dive in? <a class="nextp button" href="01-install.html">Let's go! &raquo;</a>
       </p>
       </section>
-      {{/if}}
 
-      {{#if content}}
-      <section class="content">
-        <p><a href="index.html">table of contents</a></p>
-      {{{ content }}}
-        <div class="navlinks">
-        {{#if next}}
-          <a class="nextp button" href="{{ next }}.html">OK, next! &raquo;</a>
-          {{#if previous}}
-            <a class="lastp navlink" href="{{ previous }}.html">&laquo; back</a>
-          {{/if}}
-        {{/if}}
-        </div>
-      {{/if}}
     </section>
   </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>

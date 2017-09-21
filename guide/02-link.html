@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Submarine</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+</head>
+<body>
+  <div class="wrapper">
+
+      <section class="content">
+        <p><a href="index.html">table of contents</a></p>
+      <h1 id="sharing-data">Sharing data</h1>
+<p>In this folder, you&#39;ll see:</p>
+<ul>
+<li><code>cat.png</code>, a wonderful picture of a cat</li>
+<li><code>welcome.txt</code>, information about this server.</li>
+</ul>
+<p>Let&#39;s get these files to your local machine using <code>dat</code>.</p>
+<h2 id="-dat-share-"><code>dat share</code></h2>
+<p>First, let&#39;s create a link that represents these files. Type:</p>
+<pre><code>$ dat share
+</code></pre><p>This will create a link, that looks like <code>dat://...</code>.  Your output might look something like this:</p>
+<pre><code>$ dat share
+Created new dat
+dat://5a4575c632d1a573...
+</code></pre><p>As long as the <code>dat share</code> process stays running the data will be available via the global Dat decentralized network to anyone who has that link.</p>
+<h2 id="downloading">Downloading</h2>
+<p>On your local computer, use the dat link from your terminal output to get the image and welcome.txt:</p>
+<pre><code>dat clone dat://replace-with-your-dat-link-here
+</code></pre><p>The files will be downloaded inside of the current directory. Check that they match.</p>
+
+        <div class="navlinks">
+          <a class="nextp button" href="03-modify.html">OK, next! &raquo;</a>
+            <a class="lastp navlink" href="01-install.html">&laquo; back</a>
+        </div>
+    </section>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+</body>
+</html>
