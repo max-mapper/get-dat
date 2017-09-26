@@ -1,6 +1,6 @@
 # Installation
 
-Dat is already installed on the server, but you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` from the Node.js website.
+Dat is already installed on the server session we have provided, but you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
 
 - [Download node and npm here](https://nodejs.org/en/)
 
@@ -10,7 +10,7 @@ Once you have downloaded npm, install dat:
 npm install -g dat
 ```
 
-This means that dat is now installed on your system.
+This means that dat is now installed on your system:
 
 ```
 $ dat

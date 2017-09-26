@@ -14,9 +14,12 @@ var opts = {
   guide: 'guide/',
   console: 'terminal.html',
   server: qs.server || (production ? 'docker.try-dat.com' : 'dev.try-dat.com:8080'),
-  id: qs.id
+  id: qs.id,
+  secure: production
 }
 
+
+if (production) qs.secure = 'true'
 if (!qs.server) qs.server = opts.server
 
 opts.console += '?'+querystring.stringify(qs)

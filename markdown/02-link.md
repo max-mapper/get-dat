@@ -9,7 +9,7 @@ Let's get these files to your local machine using `dat`.
 
 ## `dat share`
 
-First, let's create a link that represents these files. Type:
+First, let's create a link to share these files. Type:
 
 ```
 $ dat share
@@ -23,7 +23,7 @@ Created new dat
 dat://5a4575c632d1a573...
 ```
 
-As long as the `dat share` process stays running the data will be available via the global Dat decentralized network to anyone who has that link.
+As long as the `dat share` process stays running the data will be available via the global Dat decentralized network to anyone who has that link. The link is secret and unguessable. Only people who you share the link with will be able to access your dat.
 
 ## Downloading
 
