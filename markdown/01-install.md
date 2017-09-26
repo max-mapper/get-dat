@@ -1,6 +1,6 @@
 # Installation
 
-Dat is already installed on the server session we have provided, but you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
+Dat is already installed on the server session we have provided, so you don't need to download anything to do this tutorial. But once you do the tutorial, you'll want to play around on your personal machine. We reccomend downloading a fresh copy of dat. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
 
 - [Download node and npm here](https://nodejs.org/en/)
 
@@ -53,4 +53,4 @@ Troubleshooting & Help:
 Have fun using Dat! Learn more at docs.datproject.org
 ```
 
-Once you have this installed, you're good to go! Let's move on to the good stuff.
+At any point, you can type `dat` to get this list of commands. Once you have dat installed on your personal computer, you're good to go! But stick around in the tutorial firat to get you acquainted with dat. Let's move on to the good stuff!
