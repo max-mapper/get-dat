@@ -23,6 +23,8 @@ Created new dat
 dat://5a4575c632d1a573...
 ```
 
+You'll also notice a new folder has appeared in the directory on the server. The appearance of the `.dat` folder means that everything in this directory can now be versioned with Dat. 
+
 As long as the `dat share` process stays running the data will be available via the global Dat decentralized network to anyone who has that link. The link is secret and unguessable. Only people who you share the link with will be able to access your dat.
 
 ## Downloading
