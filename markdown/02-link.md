@@ -34,3 +34,5 @@ dat clone dat://replace-with-your-dat-link-here try-dat
 ```
 
 The files will be downloaded to your local machine, inside of the current working directory, into a folder called `try-dat`. Take a minute now to check that the files on your local machine match the files from the server.
+
+`cntrl-C` to stop running dat. 
