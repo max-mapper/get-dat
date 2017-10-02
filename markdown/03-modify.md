@@ -30,9 +30,11 @@ dat synced, waiting for updates.
 
 Check the local file - it should be updated!
 
-Currently, you're running Dat both on the remote server and at your local machine. Notice that your local machine says ```dat synced, waiting for updates.``` What happens if you make changes to the remote file while your local machine is watching? 
+Currently, you're running Dat both on the remote server and at your local machine. Notice that your local machine says 
 
-Pull up your terminal window next to the browser window and edit the `welcome.txt` file on ther server again. Watch what happens in the terminal window. The file will live sync to your machine as you type. Isn't that cool? 
+```dat synced, waiting for updates.``` 
+
+What happens if you make changes to the remote file while your local machine is watching? Pull up your terminal window next to the browser window and edit the `welcome.txt` file on ther server again. Watch what happens in the terminal window. The file will live sync to your machine as you type. Isn't that cool? 
 
 
 
