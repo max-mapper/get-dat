@@ -22,6 +22,10 @@ var opts = {
 if (production) qs.secure = 'true'
 if (!qs.server) qs.server = opts.server
 
+// for debugging production w/ local frontend
+// qs.server = 'docker.try-dat.com'
+// qs.secure = 'true'
+  
 opts.console += '?'+querystring.stringify(qs)
 
 var adventure = adventureTime(opts)

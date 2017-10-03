@@ -36,5 +36,9 @@ Currently, you're running Dat both on the remote server and at your local machin
 
 What happens if you make changes to the remote file while your local machine is watching? Pull up your terminal window next to the browser window and edit the `welcome.txt` file on ther server again. Watch what happens in the terminal window. The file will live sync to your machine as you type. Isn't that cool? 
 
+Let's edit some of the data on the server. You can 
 
-
+edit on server
+run share again on server
+run dat sync on laptop
+verify files changed
