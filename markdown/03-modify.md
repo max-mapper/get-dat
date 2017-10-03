@@ -1,4 +1,4 @@
-# Editing data, sharing data, and live syncing
+# Editing & sharing data
 
 Now you have a copy of the files on your machine inside a folder called `try-dat`! But what happens if the contents of the files change? 
 
@@ -28,10 +28,4 @@ dat synced, waiting for updates.
 [==========================================] 100.00%
 ```
 
-Check the local file - it should be updated!
-
-Currently, you're running Dat both on the remote server and at your local machine. Notice that your local machine says 
-
-```dat synced, waiting for updates.``` 
-
-What happens if you make changes to the remote file while your local machine is watching? Pull up your terminal window next to the browser window and edit the `welcome.txt` file on ther server again. Watch what happens in the terminal window. The file will live sync to your machine as you type. Isn't that cool? 
+Check the local file - it should be updated! 
