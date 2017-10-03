@@ -20,17 +20,19 @@
 </ul>
 <p>Let&#39;s get these files to your local machine using <code>dat</code>.</p>
 <h2 id="-dat-share-"><code>dat share</code></h2>
-<p>First, let&#39;s create a link to share these files. Type:</p>
+<p>First, let&#39;s create a link to share these files. In the browser window, type:</p>
 <pre><code>$ dat share
 </code></pre><p>This will create a link, that looks like <code>dat://...</code>.  Your output might look something like this:</p>
 <pre><code>$ dat share
 Created new dat
 dat://5a4575c632d1a573...
-</code></pre><p>As long as the <code>dat share</code> process stays running the data will be available via the global Dat decentralized network to anyone who has that link. The link is secret and unguessable. Only people who you share the link with will be able to access your dat.</p>
+</code></pre><p>You&#39;ll also notice a new folder has appeared in the directory on the server. The appearance of the <code>.dat</code> folder means that everything in this directory can now be versioned with Dat. </p>
+<p>As long as the <code>dat share</code> process stays running the data will be available via the global Dat decentralized network to anyone who has that link. The link is secret and unguessable. Only people who you share the link with will be able to access your dat.</p>
 <h2 id="downloading">Downloading</h2>
-<p>On your local computer, use the dat link from your terminal output to get the image and welcome.txt:</p>
-<pre><code>dat clone dat://replace-with-your-dat-link-here
-</code></pre><p>The files will be downloaded inside of the current directory. Check that they match.</p>
+<p>Copy the dat link from the server and move over to your local computer&#39;s terminal. Move in to a directory where you&#39;d like to add these files. To get the image and welcome.txt, type <code>dat clone</code> followed by the link <code>dat://</code>, and a folder name like <code>try-dat</code> :</p>
+<pre><code>dat clone dat://replace-with-your-dat-link-here try-dat
+</code></pre><p>The files will be downloaded to your local machine, inside of the current working directory, into a folder called <code>try-dat</code>. Take a minute now to check that the files on your local machine match the files from the server.</p>
+<p><code>cntrl-C</code> to stop running dat. </p>
 
         <div class="navlinks">
           <a class="nextp button" href="03-modify.html">OK, next! &raquo;</a>
