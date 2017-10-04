@@ -13,10 +13,10 @@
       <section class="content">
         <p><a href="index.html">table of contents</a></p>
       <h1 id="hosting-a-website">Hosting a website</h1>
-<p>We&#39;ve covered sharing, syncing, and live syncing of data. Adding an index.html file to the server will allow you to view through the browser. 
-Add index.html file to server by typing the following into the virtual terminal: <code>touch index.html</code>
-You will see a new file, <code>index.html</code>, has been added to the directory on the virutal server. </p>
-<p>Let&#39;s make it fun. Edit it and add some stuff in your html. Here&#39;s a template to get you started. </p>
+<p>We&#39;ve covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a link that can be viewed in any browser. Dat has an http server that can be turned on by adding <code>--http$PORT_XX</code>, where XX is specific to the server port. </p>
+<p>To share your data via the web, add index.html file to server by typing the following into the virtual terminal: <code>touch index.html</code>
+You will see a new file, <code>index.html</code>, has been added to the directory on the virtual server. </p>
+<p>Let&#39;s make it fun! Edit it and add some stuff in your html. Here&#39;s a template to get you started. </p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -25,7 +25,9 @@ You will see a new file, <code>index.html</code>, has been added to the director
 &lt;/head&gt;
 &lt;body&gt;
 &lt;h1&gt;Welcome to my data website!&lt;/h1&gt;
-&lt;p&gt;More things about my data.&lt;/p&gt;
+&lt;p&gt;More things about my data. And cat!&lt;/p&gt;
+  &lt;img src=&quot;cat.png&quot; alt=&quot;cat&quot; height=&quot;300&quot; width=&quot;450&quot;&gt; 
+&lt;br&gt;
   &lt;img id=&quot;rickroll&quot; src=&quot;https://media.giphy.com/media/13tTN4ccM3R6us/giphy.gif&quot;/&gt;  
 &lt;/body&gt;
 &lt;/html&gt;
