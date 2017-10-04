@@ -246,3 +246,7 @@ html, body {
 .tree-view .entry.selected:before {
   background-color: #f7f7f7;
 }
+
+img {
+  max-width: 100%;
+}
