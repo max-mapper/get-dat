@@ -1,10 +1,11 @@
 # Hosting a website
 
-We've covered sharing, syncing, and live syncing of data. But what about sharing via the web?
-Add index.html file to server by typing the following into the virtual terminal: `touch index.html`
-You will see a new file, `index.html`, has been added to the directory on the virutal server. 
+We've covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a link that can be viewed in any browser. Dat has an http server that can be turned on by adding `--http$PORT_XX`, where XX is specific to the server port. 
 
-Let's make it fun. Edit it and add some stuff in your html. Here's a template to get you started. 
+To share your data via the web, add index.html file to server by typing the following into the virtual terminal: `touch index.html`
+You will see a new file, `index.html`, has been added to the directory on the virtual server. 
+
+Let's make it fun! Edit it and add some stuff in your html. Here's a template to get you started. 
 ```
 <!DOCTYPE html>
 <html>
