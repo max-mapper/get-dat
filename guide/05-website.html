@@ -13,14 +13,29 @@
       <section class="content">
         <p><a href="index.html">table of contents</a></p>
       <h1 id="hosting-a-website">Hosting a website</h1>
-<p>Add index.html file to server
-run dat share --http
-view it in browser
-modify file, see browser change
-view index.html site</p>
+<p>We&#39;ve covered sharing, syncing, and live syncing of data. Adding an index.html file to the server will allow you to view through the browser. 
+Add index.html file to server by typing the following into the virtual terminal: <code>touch index.html</code>
+You will see a new file, <code>index.html</code>, has been added to the directory on the virutal server. </p>
+<p>Let&#39;s make it fun. Edit it and add some stuff in your html. Here&#39;s a template to get you started. </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Hello Friends!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to my data website!&lt;/h1&gt;
+&lt;p&gt;More things about my data.&lt;/p&gt;
+  &lt;img id=&quot;rickroll&quot; src=&quot;https://media.giphy.com/media/13tTN4ccM3R6us/giphy.gif&quot;/&gt;  
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>To share this, run <code>dat share --http=$PORT_80</code></p>
+<p>Now, view it in browser, use the url in <code>welcome.txt</code> which should look something like this: <code>http://docker.try-dat.com:34777</code>.
+Copy and past the link from your welcome.txt file into a new tab in the browser window. Check out your new website!</p>
+<p>When you modify file, the site will update when you refresh the browser window. Pretty cool, huh?</p>
 
         <div class="navlinks">
-          <a class="nextp button" href="100-beaker.html">OK, next! &raquo;</a>
+          <a class="nextp button" href="06-sparse.html">OK, next! &raquo;</a>
             <a class="lastp navlink" href="04-live.html">&laquo; back</a>
         </div>
     </section>

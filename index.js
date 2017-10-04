@@ -19,7 +19,11 @@ var opts = {
 }
 
 
-if (production) qs.secure = 'true'
+if (production) {
+  qs.secure = 'true'
+  opts.guide = 'https://try-dat.com/guide/'
+}
+
 if (!qs.server) qs.server = opts.server
 
 // for debugging production w/ local frontend

@@ -13,13 +13,23 @@
       <section class="content">
         <p><a href="index.html">table of contents</a></p>
       <h1 id="live-syncing-data">Live syncing data</h1>
-<p>Watching text live sync is cool, but not quite as cool as watching data stream in. We&#39;ve set up [earthquake data] to autoupdate with live data [here]</p>
-<p>run dat share</p>
-<p>run dat sync on client in live mode</p>
-<p>watch as files automatically update like dropbox</p>
-<p><a href="https://api.crossref.org/works?sort=updated&amp;order=desc&amp;rows=10&amp;select=DOI,title,link,deposited">https://api.crossref.org/works?sort=updated&amp;order=desc&amp;rows=10&amp;select=DOI,title,link,deposited</a></p>
-<p><a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv">https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv</a></p>
-<p><a href="http://www.ndbc.noaa.gov/station_page.php?station=42040=======">http://www.ndbc.noaa.gov/station_page.php?station=42040=======</a></p>
+<p>Currently, you&#39;re running Dat both on the remote server and at your local machine. Don&#39;t quit Dat! Leave it running on both your local machine and the virtual server. </p>
+<p>Notice that your local machine says:</p>
+<pre><code>dat synced, waiting for updates.
+</code></pre><p>What happens if you make changes to the remote file while your local machine is watching? Pull up your terminal window next to the browser window and edit the <code>welcome.txt</code> file on ther server again. </p>
+<p>Watch what happens in the terminal window. </p>
+<p>Your local terminal window:</p>
+<pre><code>1 connection | Download 445 KB/s Upload 0 B/s
+
+Downloading updates...
+[====================================------] 86.05%
+</code></pre><p>The virtual machine:</p>
+<pre><code>Watching for file updates                                                          
+ADD: welcome.txt (329 B)                                                           
+ADD: welcome.txt (328 B)                                                           
+ADD: welcome.txt (323 B)                                                           
+ADD: welcome.txt (0 B)
+</code></pre><p>The file will live sync to your machine as you type. Isn&#39;t that cool? </p>
 
         <div class="navlinks">
           <a class="nextp button" href="05-website.html">OK, next! &raquo;</a>
