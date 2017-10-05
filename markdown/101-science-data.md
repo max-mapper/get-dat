@@ -1,4 +1,4 @@
-# Distributing Scientific Data
+# Extra Credit: Distributing Scientific Data
 
 Now that you've used Dat to share example data, give it a spin using some of your own research data, or data that you've used in the past.
 

@@ -1,4 +1,4 @@
-# Desktop Application
+# Extra Credit: Desktop Application
 
 If you'd like to try a different workflow for managing Dat repositories, we have developed a Desktop application called Dat Desktop. You can install it from [https://datproject.org/install](https://datproject.org/install) for Mac or Linux (Windows coming soon).
 
