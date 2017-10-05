@@ -1,6 +1,6 @@
 # Sharing data
 
-In this folder, you'll see:
+We are going to start by using the virtual server in the browser, sharing a folder located there, and downloading it to your machine. In this folder, you'll see:
 
   - `cat.png`, a wonderful picture of a cat
   - `welcome.txt`, information about this server.
@@ -9,7 +9,7 @@ Let's get these files to your local machine using `dat`.
 
 ## `dat share`
 
-First, let's create a link to share these files. In the browser window, type:
+First, let's create a link to share these files. In the virtual terminal in the browser window, type:
 
 ```
 $ dat share
