@@ -6,6 +6,8 @@ Dat is already installed on the server session we have provided, but you'll need
 
 You'll also need a Terminal application on your local computer. If you're using Windows, you should use the **Git Shell** app as your terminal. It is installed with [GitHub Desktop]([GitHub Desktop](http://desktop.github.com)). In Mac and Linux you can use the app **Terminal**, which is already on your computer.
 
+If you've never used the command line before, check out [Command Line Bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=bfv5p9l1w5g) to get comfortable navigating your computer via the command line. 
+
 Once you have downloaded npm, install dat:
 
 ```
