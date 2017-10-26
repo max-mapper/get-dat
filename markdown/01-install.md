@@ -1,6 +1,6 @@
 # Installation
 
-Dat is already installed on the server session we have provided, but you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
+Dat is already installed on the server session we have provided, but in order to complete this tutorial you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
 
 - [Download node and npm here](https://nodejs.org/en/)
 
@@ -8,7 +8,7 @@ You'll also need a Terminal application on your local computer. If you're using 
 
 If you've never used the command line before, check out [Command Line Bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=bfv5p9l1w5g) to get comfortable navigating your computer via the command line. 
 
-Once you have downloaded npm, install dat:
+Once you have downloaded npm, install dat on your local machine:
 
 ```
 npm install -g dat
