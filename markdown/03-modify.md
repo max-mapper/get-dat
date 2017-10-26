@@ -17,7 +17,15 @@ $ dat share
 Created new dat
 dat://5a4575c632d1a573...
 ```
-Now move over to your **local terminal** window, navigate into the `try-dat` folder, and type `dat sync`. Your output should look like this:
+Now move over to your **local terminal** window, navigate into the `try-dat` folder, and run `dat sync`. 
+
+Type the following in the **local terminal**:
+
+```
+$ dat sync
+```
+
+Your output should look like this:
 
 ```
 $ dat sync
