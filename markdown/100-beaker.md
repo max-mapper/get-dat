@@ -12,7 +12,7 @@ If you haven't added an index.html, Beaker should show you something like this:
 
 ![Beaker-image](/img/beaker-screenshot-1.png)
 
-If you've added an index.htl file, it will render the html and look more like this:
+If you've added an index.html file, it will render the html and look more like this:
 
 ![Beaker-image](/img/Beaker-screenshot-2.png)
 

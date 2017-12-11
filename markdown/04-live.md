@@ -12,7 +12,7 @@ What happens if you make changes to the remote file while your local machine is 
 
 Watch what happens in your **local terminal** window as you type. 
 
-Since this is a tiny text time, the updates will download extremely fast. Your **local terminal** window will look something like this:
+Since this is a tiny text file, the updates will download extremely fast. Your **local terminal** window will look something like this:
 ```
 1 connection | Download 445 KB/s Upload 0 B/s
 
