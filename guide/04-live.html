@@ -13,23 +13,23 @@
       <section class="content">
         <p><a href="index.html">table of contents</a></p>
       <h1 id="live-syncing-data">Live syncing data</h1>
-<p>Currently, you&#39;re running Dat both on the remote server and at your local machine. Don&#39;t quit Dat! Leave it running on both your local machine and the virtual server. </p>
-<p>Notice that your local machine says:</p>
+<p>Currently, you&#39;re running Dat both on the source and at your destination. Don&#39;t quit Dat! Leave it running on both terminals. </p>
+<p>Notice that your <strong>source</strong> terminal window says:</p>
 <pre><code>dat synced, waiting for updates.
-</code></pre><p>What happens if you make changes to the remote file while your local machine is watching? Pull up your terminal window next to the browser window and edit the <code>welcome.txt</code> file on ther server again. </p>
-<p>Watch what happens in the terminal window. </p>
-<p>Your local terminal window:</p>
+</code></pre><p>What happens if you make changes to the source file while your destination is watching? On the <strong>source</strong> side, edit the <code>welcome.txt</code> rapidly, saving after each edit in your text editor program.</p>
+<p>Watch what happens in your <strong>destionation terminal</strong> window as you save. </p>
+<p>Since this is a tiny text time, the updates will download extremely fast. Your <strong>source terminal</strong> window will look something like this:</p>
 <pre><code>1 connection | Download 445 KB/s Upload 0 B/s
 
 Downloading updates...
 [====================================------] 86.05%
-</code></pre><p>The virtual machine:</p>
+</code></pre><p>Meanwhile, Dat running in the <strong>destination machine</strong> is watching for file updates:</p>
 <pre><code>Watching for file updates                                                          
 ADD: welcome.txt (329 B)                                                           
 ADD: welcome.txt (328 B)                                                           
 ADD: welcome.txt (323 B)                                                           
 ADD: welcome.txt (0 B)
-</code></pre><p>The file will live sync to your machine as you type. Isn&#39;t that cool? </p>
+</code></pre><p>The file will live sync to your machine as you save. Isn&#39;t that cool? </p>
 
         <div class="navlinks">
           <a class="nextp button" href="05-website.html">OK, next! &raquo;</a>

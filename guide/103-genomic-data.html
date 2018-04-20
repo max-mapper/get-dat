@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <title>Submarine</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+</head>
+<body>
+  <div class="wrapper">
+
+      <section class="content">
+        <p><a href="index.html">table of contents</a></p>
+      <h1 id="extra-credit-import-genomic-data-into-dat-with-the-javascript-api">Extra Credit: Import genomic data into Dat with the JavaScript API</h1>
+<p>We are going to download the flu virus genome from <a href="https://www.ncbi.nlm.nih.gov">NCBI</a> with <a href="https://bionode.io">Bionode</a> and import it into Dat!</p>
+<p>Create a new folder named <code>infuenza</code>, enter that folder with your local terminal (<code>cd</code>) and install <a href="https://doc.bionode.io/#bionode-ncbi">bionode-ncbi</a>.</p>
+<pre><code class="lang-bash">npm install bionode-ncbi
+</code></pre>
+<p>Create a <code>script.js</code> file with the following content:</p>
+<pre><code class="lang-javascript">var Dat = require(&#39;dat&#39;)
+var Bionode = require(&#39;bionode-ncbi&#39;)
+
+Dat(&#39;.&#39;, function (err, dat) {
+  if (err) throw err
+  var download = Bionode.download(&#39;assembly&#39;, &#39;ViralMultiSegProj15622&#39;)
+  download.on(&#39;data&#39;, console.log)
+  download.on(&#39;end&#39;, function() {
+    dat.importFiles()
+    dat.joinNetwork()
+    console.log(&#39;My Dat link is: dat://&#39;, dat.key.toString(&#39;hex&#39;))
+  })
+})
+</code></pre>
+<p>Run it:</p>
+<pre><code class="lang-bash">node script.js
+</code></pre>
+<p>Clone this Dat archive into another folder (change it to your Dat link):</p>
+<pre><code class="lang-bash">❯ dat clone d3457d9e11c9548faa704a799e6553d1dfb672264cdd0374a62564213c3c3474 influenzaCopy
+</code></pre>
+<p>Check that you got a copy of the influenza genome from Dat:</p>
+<pre><code class="lang-bash">❯ gunzip -c influenzaCopy/266481/GCF_000865085.1_ViralMultiSegProj15622_genomic.fna.gz | head -n 5
+</code></pre>
+<p>Should give you:</p>
+<pre><code class="lang-bash">&gt;NC_007373.1 Influenza A virus (A/New York/392/2004(H3N2)) segment 1, complete sequence
+AGCAAAAGCAGGTCAATTATATTCAGTATGGAAAGAATAAAAGAACTACGGAACCTGATGTCGCAGTCTCGCACTCGCGA
+GATACTGACAAAAACCACAGTGGACCATATGGCCATAATTAAGAAGTACACATCGGGGAGACAGGAAAAGAACCCGTCAC
+TTAGGATGAAATGGATGATGGCAATGAAATACCCAATCACTGCTGACAAAAGGATAACAGAAATGGTTCCGGAGAGAAAT
+GAACAAGGACAAACTCTATGGAGTAAAATGAGTGATGCTGGATCAGATCGAGTGATGGTATCACCTTTGGCTGTAACATG
+</code></pre>
+
+        <div class="navlinks">
+        </div>
+    </section>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+</body>
+</html>
