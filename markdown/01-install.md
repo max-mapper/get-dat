@@ -1,8 +1,10 @@
 # Installation
 
-Dat is already installed on the server session we have provided, but in order to complete this tutorial you'll need a fresh copy on your personal computer too. Dat is currently distributed using `npm`. We recommend downloading `node` and `npm` LTS from the Node.js website.
+First you'll need to install the `dat` command line tool if you haven't already. There are two ways to do this, using `npm` or downloading a binary. If you don't have a preference we recommend using `npm` which you can do by downloading the Node LTS installer from the Node.js website:
 
 - [Download node and npm here](https://nodejs.org/en/)
+
+If you run into problems, you can view more detailed installation instructions [here](https://github.com/datproject/dat/blob/master/README.md#installing-the--dat-command-line-tool).
 
 You'll also need a Terminal application on your local computer. If you're using Windows, you should use the **Git Shell** app as your terminal. It is installed with [GitHub Desktop](http://desktop.github.com). In Mac and Linux you can use the app **Terminal**, which is already on your computer.
 
