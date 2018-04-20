@@ -27,11 +27,10 @@ Let's make it fun! Use the test editor in the browser to add to the new `index.h
 </html>
 ```
 
-To share this, type the following in the **virtual terminal**:
+To share this, type the following in the **source terminal**:
 
-`dat share --http=$PORT_80` 
+`dat share --http=8080` 
 
-To view it in browser, check the file called `welcome.txt` in the **virtual terminal**. It will list a url that should look something like this: `http://docker.try-dat.com:34777`
-Copy and past the link from your welcome.txt file into a new tab in the browser window. Windows users beware - please right-click to copy, as `cntrl-C` will quit dat and dat needs to keep running. Check out your new website!
+Check out your new website at http://localhost:8080!
 
 When you modify file, the site will update when you refresh the browser window. Pretty cool, huh?

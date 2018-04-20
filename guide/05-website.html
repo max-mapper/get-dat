@@ -13,10 +13,12 @@
       <section class="content">
         <p><a href="index.html">table of contents</a></p>
       <h1 id="hosting-a-website">Hosting a website</h1>
-<p>We&#39;ve covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a link that can be viewed in any browser. Dat has an http server that can be turned on by adding <code>--http$PORT_XX</code>, where XX is specific to the server port. </p>
-<p>To share your data via the web, add index.html file to server by typing the following into the virtual terminal: <code>touch index.html</code>
-You will see a new file, <code>index.html</code>, has been added to the directory on the virtual server. </p>
-<p>Let&#39;s make it fun! Edit it and add some stuff in your html. Here&#39;s a template to get you started. </p>
+<p>We&#39;ve covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a Dat link that can be viewed in any browser. Dat has an http server that can be turned on by adding <code>--http$PORT_XX</code>, where XX is specific to the server port. </p>
+<p>To share your data via the web, create a file called <code>index.html</code> using the command <code>touch</code>. 
+Type the following into the <strong>virtual terminal</strong>: </p>
+<p><code>touch index.html</code></p>
+<p>You will see a new file, <code>index.html</code>, has been added to the directory on the virtual server. </p>
+<p>Let&#39;s make it fun! Use the test editor in the browser to add to the new <code>index.html</code>. Edit it and add some stuff in your html. Here&#39;s a silly template to get you started. </p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -31,13 +33,13 @@ You will see a new file, <code>index.html</code>, has been added to the director
   &lt;img id=&quot;rickroll&quot; src=&quot;https://media.giphy.com/media/13tTN4ccM3R6us/giphy.gif&quot;/&gt;  
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>To share this, run <code>dat share --http=$PORT_80</code></p>
-<p>Now, view it in browser, use the url in <code>welcome.txt</code> which should look something like this: <code>http://docker.try-dat.com:34777</code>.
-Copy and past the link from your welcome.txt file into a new tab in the browser window. Check out your new website!</p>
+</code></pre><p>To share this, type the following in the <strong>source terminal</strong>:</p>
+<p><code>dat share --http=8080</code> </p>
+<p>Check out your new website at <a href="http://localhost:8080!">http://localhost:8080!</a></p>
 <p>When you modify file, the site will update when you refresh the browser window. Pretty cool, huh?</p>
 
         <div class="navlinks">
-          <a class="nextp button" href="06-sparse.html">OK, next! &raquo;</a>
+          <a class="nextp button" href="06-dat-git-partial.html">OK, next! &raquo;</a>
             <a class="lastp navlink" href="04-live.html">&laquo; back</a>
         </div>
     </section>

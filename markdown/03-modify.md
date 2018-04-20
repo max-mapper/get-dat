@@ -1,25 +1,26 @@
 # Editing & sharing data
 
-Now you have a copy of the files on your machine inside a folder called `try-dat`! But what happens if the contents of the files change? Let's find out.
+Now you have a copy of the files on your destination a folder called `try-dat`! But what happens if the contents of the files change? Let's find out.
 
-On the **virtual machine** in the browser, click on the `welcome.txt` file to bring it up in the editor in the lower right-hand quadrant of the browser window. Make some changes to the text in the file. Once you've edited it (the server saves automatically) the file on the server will no longer matche the one on your local machine. To rectify this and sync the new changes to your local copy, run `dat share` again on the server.
+On the **source** create a new file called `welcome.txt` and open it in your favorite text editor app (such as TextEdit or Sublime Text). Make some changes to the text in the file. Once you've edited it, save the file. The file on the source will no longer match the one on the destination. To rectify this and sync the new changes to the destination copy, run `dat share` again on the source.
 
-Type the following in the **virtual terminal**:
+Type the following in the **source** terminal:
 
 ```
 $ dat share
 ```
 
-This will create a link, that looks like `dat://...`.  Your output in the **virtual terminal** will look something like this:
+This will create a link, that looks like `dat://...`.  Your output in the **source** terminal will look something like this:
 
 ```
 $ dat share
 Created new dat
 dat://5a4575c632d1a573...
 ```
-Now move over to your **local terminal** window, navigate into the `try-dat` folder, and run `dat sync`. 
 
-Type the following in the **local terminal**:
+Now lets switch to the **destination** terminal. `cd` into the `try-dat` folder, and run `dat sync`. 
+
+Type the following in the **destination terminal**:
 
 ```
 $ dat sync
@@ -38,4 +39,4 @@ dat synced, waiting for updates.
 [==========================================] 100.00%
 ```
 
-Check the local file - it should be updated! 
+Check the file on both sides - they should match.
