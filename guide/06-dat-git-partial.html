@@ -15,13 +15,13 @@
       <h1 id="downloading-a-partial-dataset-from-git">Downloading a partial dataset from git</h1>
 <p>Here&#39;s an example of hosting code on Github that includes a link to a Dat dataset. This Github repo contains a <code>dat.json</code> file, which contains the Dat link (dat://...) for the dataset as well as other metadata about these data. </p>
 <p>The author has included a <code>.datdownload</code> file which specifies which files users will download by default. Without this, all files would be downloaded upon dat cloning this repository. You can imagine a scenario where a larger dataset is availble, but only segments of it are required to reproduce an analysis. Or a dataset that won&#39;t fit in git, but fits in dat. Because this author has a <code>dat.json</code> file in their git repository, you don&#39;t need to work with their Dat link. In this exercise, you will clone the repository with git and then access the data with dat.</p>
-<p>To clone the repository to your local machine using git, type the following in your <strong>local terminal</strong>:</p>
+<p>To clone the repository to your local machine using git, type the following in your terminal:</p>
 <pre><code>git clone https://github.com/joehand/dat-git-example.git
-</code></pre><p>Now you have a copy of <code>dat-git-example</code> that includes text and code files, but none of the data files. Check the <code>index.html</code> to see that the pictures are missing by typing the following in your <strong>local terminal</strong>:</p>
+</code></pre><p>Now you have a copy of <code>dat-git-example</code> that includes text and code files, but none of the data files. Check the <code>index.html</code> to see that the pictures are missing by typing the following in your terminal:</p>
 <pre><code>open index.html
-</code></pre><p>To get the data, run <code>dat clone --empty</code> to fetch the <code>.dat</code> metadata (but none of the files). Type the following in your <strong>source terminal</strong>: </p>
+</code></pre><p>To get the data, run <code>dat clone --empty</code> to fetch the <code>.dat</code> metadata (but none of the files). Type the following in your terminal: </p>
 <pre><code>dat clone ./dat-git-example --empty
-</code></pre><p>Then sync to get the files, specified by the <code>.datdownload</code>, type the following in your <strong>source terminal</strong>:</p>
+</code></pre><p>Then sync to get the files, specified by the <code>.datdownload</code>, type the following in your terminal:</p>
 <pre><code>dat sync ./dat-git-example
 </code></pre><p>You should now have downloaded both the code (<code>index.html</code>) and the data files that were specificed by the <code>.datdownload</code> file. </p>
 
