@@ -1,15 +1,9 @@
 # Hosting a website
 
-We've covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a Dat link that can be viewed in any browser. Dat has an http server that can be turned on by adding `--http$PORT_XX`, where XX is specific to the server port. 
+We've covered sharing, syncing, and live syncing of data. But what about sharing via the web? We can create a Dat link that can be viewed in a browser by asking dat to use the built-in http server. Use the `--http` flag to start serving on `http://localhost:8080`. The port can be specified using `--http=XYZ`, where `XYZ` is the server port. 
 
-To share your data via the web, create a file called `index.html` using the command `touch`. 
-Type the following into the **virtual terminal**: 
+To demonstrate a good use case we will create a file called `index.html`. We suggest the following content but any HTML will do:
 
-`touch index.html`
-
-You will see a new file, `index.html`, has been added to the directory on the virtual server. 
-
-Let's make it fun! Use the test editor in the browser to add to the new `index.html`. Edit it and add some stuff in your html. Here's a silly template to get you started. 
 ```
 <!DOCTYPE html>
 <html>
@@ -27,10 +21,10 @@ Let's make it fun! Use the test editor in the browser to add to the new `index.h
 </html>
 ```
 
-To share this, type the following in the **source terminal**:
+To share this, type the following in your terminal:
 
-`dat share --http=8080` 
+`dat share --http` 
 
 Check out your new website at http://localhost:8080!
 
-When you modify file, the site will update when you refresh the browser window. Pretty cool, huh?
+When you modify the file, the site will update when you refresh the browser window. Pretty cool, huh?
